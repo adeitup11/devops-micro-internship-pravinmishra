@@ -33,12 +33,11 @@ You will reuse this in later weeks. So do it properly once.
 
 ## Answer
 
-=======
+
 
 
 One thing I believe to be true that many people around me would disagree with is that consistency is far more important than natural talent. Many people believe success comes mainly from being gifted or exceptionally intelligent, but I believe that showing up every day, continuously learning, and making steady improvements lead to better long-term results. Throughout my career, I have found that persistence, adaptability, and a willingness to learn from mistakes have helped me achieve more than talent alone ever could. This mindset has enabled me to grow professionally, solve complex problems, and take on new challenges with confidence
 
----
 
 # Assignment 2. What are the top 3 objective truths you discovered through experimentation and results?
 
@@ -211,9 +210,6 @@ Choose books that improve:
 
 ## Book List
 
-<<<<<<< HEAD
-
-=======
 1. Atomic Habits
 
 2. The Psychology of Money – Morgan Housel 
