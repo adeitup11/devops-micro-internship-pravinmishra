@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Adekunle Adepoju |
+| **LinkedIn** | [Adekunle-Adepoju](https://www.linkedin.com/in/adepoju-adekunle-43217aa4/) |
+| **Location** | Lagos, Nigeria|
+| **Background** | Azure Cloud Engineer |
+| **Goal** | To become a disciplined, high-performing cloud engineer by consistently learning, building real-world Azure and DevOps projects, expanding my GitHub portfolio, and creating opportunities for long-term career growth and leadershi |
 
 ---
 
@@ -68,10 +68,10 @@ This is not a course. It is an internship-style program — real deployments, re
 **Your stack (uncomment each badge as you earn it):**
 
 <!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/)
 
 <!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
 
 <!-- Week 02 → Agentic AI with Claude Code -->
 <!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
@@ -133,8 +133,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | — | — |
+| 01 | Success Mindset | ✅ Completed | ✅ Completed  Pending |https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-cloudengineering-careergrowth-share-7478536371012304896-LTOK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/adekunle-adepoju-2-0-42aa7d6844ea|
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Bash Scripting | ⬜ Not Started | ⏳ Pending | — | — |
