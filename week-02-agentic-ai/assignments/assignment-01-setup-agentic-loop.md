@@ -4,10 +4,10 @@
 
 ## 1. Assignment Overview
 
-**Assignment:** Setup & Agentic Loop  
-**Estimated Time:** 60 minutes  
-**Difficulty:** Beginner   
-**Category:** Agentic AI, Claude Code Setup  
+**Assignment:** Setup & Agentic Loop     
+**Estimated Time:** 60 minutes     
+**Difficulty:** Beginner      
+**Category:** Agentic AI, Claude Code Setup     
 
 ---
 
