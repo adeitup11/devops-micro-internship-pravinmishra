@@ -151,15 +151,8 @@ By the end of those five years, Adekunle had built a professional reputation bas
 
 ### Public Link
 
-Paste your link here:
-
-<<<<<<< HEAD:week-01-success-mindset/README.md
 https://medium.com/@adeitup11/adekunle-adepoju-2-0-42aa7d6844ea
-=======
-`Add your URL here`
 
->>>>>>> upstream/main:week-01-success-mindset/assignment-01-mindset-os.md
----
 
 # Assignment 4. Have you ever cut corners (unethical / dishonest / shortcut behavior — not necessarily illegal)? If yes, how did it make you feel?
 
@@ -341,7 +334,6 @@ Examples:
 
 #### My Distraction Rules
 
-Add your answer here...
 
 Keep my phone on Do Not Disturb during DMI sessions.
 Do not use social media until my daily work is completed.
@@ -366,13 +358,7 @@ Every Monday to Thursday from 7:00 PM to 8:00 PM, I will complete one uninterrup
 
 ### LinkedIn Post
 
-Paste your LinkedIn post link here:
-
-<<<<<<< HEAD:week-01-success-mindset/README.md
 https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-cloudengineering-careergrowth-share-7478536371012304896-LTOK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
-=======
-`Add your URL here`
->>>>>>> upstream/main:week-01-success-mindset/assignment-01-mindset-os.md
 
 ---
 

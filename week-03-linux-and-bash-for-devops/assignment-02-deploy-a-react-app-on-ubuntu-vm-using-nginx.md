@@ -47,6 +47,7 @@ Clone the project repository and verify the project files are present.
 #### Screenshot 3 — Output of `ls` inside the `my-react-app` directory showing project files
 
 ![alt text](screenshots/ls.png)
+
 ---
 
 # Task 4 — Modify Application (Personalization)
@@ -101,8 +102,7 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 #### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
 
-![alt text](screenshots/Screenshot8.png
-)
+![alt text](screenshots/Screenshot8.png)
 
 # Task 8 — Test Deployment
 
@@ -131,9 +131,7 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_cloudcomputing-linux-devops-share-7483619877761626112-VHlw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_cloudcomputing-linux-devops-share-7483619877761626112-VHlw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 ---
 

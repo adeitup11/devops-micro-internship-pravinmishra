@@ -118,9 +118,7 @@ Verify the deployed website and Nginx service are healthy.
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_cloudcomputing-linux-devops-share-7483619877761626112-VHlw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_cloudcomputing-linux-devops-share-7483619877761626112-VHlw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 ---
 

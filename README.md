@@ -129,11 +129,11 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-cloudcomputing-networking-share-7486751974521024512-K14L/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | — |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed  Pending |https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-cloudengineering-careergrowth-share-7478536371012304896-LTOK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/adekunle-adepoju-2-0-42aa7d6844ea|
 | 02 | Agentic AI with Claude Code | 🔄 In Progress | 🔄 In Progress | — | — |
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ✅ Completed | ✅ Completed | ✅ Completed |✅ Completed 
-| 04 | Git & GitHub | ✅ Completed| ✅ Completed |https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmibypravinmishra-devops-git-share-7486131934302232576-uOK5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws |https://medium.com/@adeitup11/devops-micro-internship-dmi-cohort-3-assignment-5-completed-open-source-collaboration-4fd502a36a60 |
+| 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmibypravinmishra-devops-git-share-7486131934302232576-uOK5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws  | https://medium.com/@adeitup11/website-deployment-successfully-completed-ce94844ed94a 
+| 04 | Git & GitHub | ✅ Completed| ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmibypravinmishra-devops-git-share-7486131934302232576-uOK5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/devops-micro-internship-dmi-cohort-3-assignment-5-completed-open-source-collaboration-4fd502a36a60
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |

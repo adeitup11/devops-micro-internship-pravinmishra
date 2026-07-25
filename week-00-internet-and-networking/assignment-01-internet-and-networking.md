@@ -25,16 +25,14 @@ Take a screenshot of your interaction showing:
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![Task 1 Screenshot](screenshots/task-1-chatgpt.png)
+![alt text](image.png)
 
-
-Replace `task-1-chatgpt.png` with your actual screenshot file name.
 
 ---
 
 ## What I Learned (2–3 lines)
 
-Add your answer here...
+A network protocol is like the rules of a conversation—it ensures that devices communicate in an organized, reliable, and understandable way.
 
 ---
 
@@ -59,7 +57,7 @@ Write a short explanation (**100–150 words**) that includes:
 
 ## Answer
 
-Add your answer here...
+A computer network uses packet switching to send data by breaking it into small packets that travel independently and are reassembled at their destination. Every device on the network has a unique IP address, which acts like a home address, ensuring the packets reach the correct destination. The TCP/IP protocol suite manages communication by organizing data into packets, ensuring reliable delivery, and routing them across networks. When you browse the internet, HTTP (Hypertext Transfer Protocol) or HTTPS (Hypertext Transfer Protocol Secure) is used to transfer web pages between your browser and a web server. HTTPS adds encryption to protect sensitive information such as passwords, banking details, and personal data, making online communication secure and trustworthy.
 
 ---
 
@@ -91,10 +89,8 @@ EpicReads bookstore has two application versions:
 
 Save your diagram image in the `screenshots` folder and update the file name below.
 
-![Application Architecture Diagram](screenshots/task-3-diagram.png)
+![alt text](<ChatGPT Image Jul 25, 2026, 06_50_23 AM.png>)
 
-
-Replace `task-3-diagram.png` with your actual diagram file name.
 
 ---
 
@@ -102,18 +98,18 @@ Replace `task-3-diagram.png` with your actual diagram file name.
 
 ### Frontend
 
-* Add your answer here...
-* Add your answer here...
+* HTML, CSS, JavaScript
+* React.js, Angular
 
 ### Backend
 
-* Add your answer here...
-* Add your answer here...
+* Node.js with Express.js
+* Python with Django or Flask
 
 ### Database
 
-* Add your answer here...
-* Add your answer here...
+* MySQL
+* PostgreSQL
 
 ---
 
@@ -142,7 +138,7 @@ In **50–100 words**, explain in your own words:
 
 ## Answer
 
-Add your answer here...
+The Domain Name System (DNS) is like the internet's phonebook. It translates a human-friendly domain name, such as epicreads.com, into an IP address that computers use to locate a website. To connect epicreads.com to 52.172.142.222, you should use an A (Address) record because it maps a domain name directly to an IPv4 address. This allows users to access the website by typing the domain name instead of remembering the numeric IP address.
 
 ---
 
@@ -178,10 +174,8 @@ ls
 
 Save your screenshot in the `screenshots` folder and update the file name below.
 
-![VS Code Setup Screenshot](screenshots/task-5-vscode.png)
+![alt text](image-1.png)
 
-
-Replace `task-5-vscode.png` with your actual screenshot file name.
 
 ---
 
@@ -217,9 +211,9 @@ Add the following credit note at the end of your post:
 
 Paste your LinkedIn post URL here:
 
-```text
-Add your URL here...
-```
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-cloudcomputing-networking-share-7486751974521024512-K14L/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
+
+
 
 ---
 
@@ -227,7 +221,42 @@ Add your URL here...
 
 Paste the full text of your LinkedIn post here:
 
-Add your post content here...
+🚀 DevOps Micro Internship (DMI) Cohort 3 – Week 00: Internet & Networking Fundamentals
+
+I completed Week 00 of my DevOps learning journey, focusing on the core concepts that power modern applications and cloud environments.
+
+🤖 ChatGPT
+I explored how to use ChatGPT as a learning assistant by creating effective prompts to understand technical concepts. I learned that clear prompts help generate simpler explanations with real-world examples, making complex topics easier to understand.
+
+🌐 Internet & Networking
+I learned how the internet enables global communication through key networking concepts:
+Packet Switching breaks data into smaller packets that travel across networks and are reassembled at the destination.
+IP Addresses identify devices and ensure data reaches the correct location.
+TCP/IP provides the foundation for reliable communication between systems.
+HTTP/HTTPS enables browsers and servers to exchange web content securely.
+
+🏗️ Application Architecture
+I explored different application architectures using the EpicReads bookstore scenario:
+Two-Tier Architecture: Frontend + Database
+Three-Tier Architecture: Frontend + Backend + Database
+I also learned about common technologies used in each layer:
+Frontend: HTML, CSS, JavaScript, React.js, Angular
+Backend: Node.js, Express.js, Python Django/Flask
+Database: MySQL, PostgreSQL
+🌍 DNS (Domain Name System)
+
+I learned how DNS works as the internet’s directory by translating human-readable domain names into IP addresses.
+For example, connecting epicreads.com to 52.172.142.222 requires an A Record, which maps a domain name directly to an IPv4 address, allowing users to access websites without remembering complex IP addresses.
+
+💻 VS Code Setup
+I configured my Visual Studio Code environment, opened the integrated terminal, executed basic commands, and customized my development workspace.
+
+This week strengthened my understanding of networking fundamentals, application structures, and tools that are essential for a DevOps Engineer.
+Looking forward to building more hands-on projects and expanding my DevOps skills. 🚀
+
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://lnkd.in/dmfy69G3 · Start your DevOps journey: https://lnkd.in/dbDhcMP6
+
+#DevOps #CloudComputing #Networking #Azure #Linux #Docker #Kubernetes #LearningJourney #DMI #AgenticAI #SoftwareEngineering
 
 ---
 
@@ -235,19 +264,19 @@ Add your post content here...
 
 ### What did you find easy?
 
-Add your answer here...
+I found the basic networking concepts such as IP addresses, DNS, HTTP/HTTPS, and application architecture easier to understand because they relate to real-world examples like websites and online stores. Using ChatGPT as a learning assistant also helped me break down complex concepts into simpler explanations.
 
 ---
 
 ### What was difficult?
 
-Add your answer here...
+The most challenging part was understanding how different layers of networking and application architecture work together behind the scenes. Connecting concepts like packet switching, TCP/IP communication, DNS records, and how users access a globally hosted application required more research and practice.
 
 ---
 
 ### What will you improve next week?
 
-Add your answer here...
+Next week, I will improve my hands-on technical skills by practicing more with command-line tools, Linux basics, cloud concepts, and DevOps workflows. I will also focus on building a stronger understanding of how infrastructure components communicate in real-world production environments.
 
 ---
 

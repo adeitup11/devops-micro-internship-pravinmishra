@@ -321,6 +321,7 @@ Answer the following in your own words:
 **1. What caused the configuration failure?**
 
 The configuration failure was caused by an incorrect or invalid Nginx configuration. This can happen due to a syntax error, an incorrect directive, a missing file, or an invalid path in the configuration file. When Nginx checks the configuration, it fails validation and refuses to reload or restart to prevent a broken configuration from affecting the web server.
+
 ---
 
 **2. How did you fix the issue?**
@@ -332,6 +333,7 @@ I identified the problem by running nginx -t, which checks the configuration and
 **3. How can you avoid this kind of issue in real production systems?**
 
 To avoid configuration issues in production, I would validate every configuration change with nginx -t before deploying it. I would also use version control, peer reviews, and test changes in a staging environment before applying them to production. Automating configuration validation through CI/CD pipelines and maintaining backups of working configurations also helps reduce the risk of downtime and enables quick rollback if needed.
+
 ---
 
 # Task 7 — Web Application Failure Simulation
@@ -361,11 +363,13 @@ Answer the following in your own words:
 **1. What caused the application to break in this scenario?**
 
 The application stopped working because the web server or application configuration became invalid or the application files were not being served correctly. As a result, users could not access the application until the issue was identified and corrected.
+
 ---
 
 **2. How did you fix the issue and restore the application?**
 
 The application stopped working because the web server or application configuration became invalid or the application files were not being served correctly. As a result, users could not access the application until the issue was identified and corrected.
+
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
@@ -393,16 +397,19 @@ SSH key-based authentication is more secure because it uses a pair of cryptograp
 **2. Why should only required ports be open on a production server?**
 
 Only the ports needed for the server's services should be open to minimize the attack surface. Closing unnecessary ports reduces the risk of attackers exploiting unused services and helps improve the overall security of the server.
+
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
 Enabling Nginx on boot ensures the web server starts automatically whenever the server restarts. This helps maintain application availability, reduces downtime, and eliminates the need for manual intervention after a reboot.
+
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
 Sharing secrets, API keys, passwords, or private SSH keys publicly can allow unauthorized users to access systems, steal sensitive data, modify resources, or incur unexpected cloud costs. Credentials should always be stored securely using tools such as a secrets manager or key vault and never committed to public repositories.
+
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
@@ -417,9 +424,8 @@ Stopping or terminating unused cloud resources helps reduce unnecessary costs, i
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
 
-`https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_cloudcomputing-linux-devops-share-7483619877761626112-VHlw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_cloudcomputing-linux-devops-share-7483619877761626112-VHlw/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 ---
 
