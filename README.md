@@ -79,11 +79,10 @@ This is not a course. It is an internship-style program — real deployments, re
 [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
 
 <!-- Week 04 → Git & GitHub -->
-<<<<<<< HEAD
+
 [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) 
-=======
-<!-- [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/) -->
->>>>>>> c7af7a07c09207c22e4534868851025d1dc3128c
+
+
 
 <!-- Week 05 → DevOps Lifecycle & Agile -->
 <!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
