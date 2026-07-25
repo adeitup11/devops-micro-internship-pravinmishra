@@ -103,7 +103,7 @@ git push
 
 | | **Pravin's Repo (this one)** | **Your Fork** |
 |---|---|---|
-| README.md | Placeholder — "Your Name" | Filled with your real details |
+| README.md | Adekunle Adepoju | Filled with your real details |
 | Week folders | Empty templates | Your actual answers + screenshots |
 | Progress table | All ⬜ Not Started | Updates as you complete weeks |
 | Achievements | Empty | Your Champion badges & rank |
