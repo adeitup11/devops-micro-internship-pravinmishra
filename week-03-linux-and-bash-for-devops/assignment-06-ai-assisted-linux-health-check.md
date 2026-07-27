@@ -486,13 +486,13 @@ Verify: Health checks were run again to confirm the system was restored.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-bash-linux-share-7486866578756546560-PAnD/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](image-45.png)
 
 ---
 
@@ -500,7 +500,7 @@ Add your screenshot here.
 
 Paste the URL of your GitHub folder or repository containing the assignment files here:
 
-`Add your URL here`
+https://github.com/adeitup11/devops-micro-internship-pravinmishra
 
 ---
 
