@@ -97,6 +97,7 @@ https://github.com/adeitup11/Ultimate-Agentic-DevOps-with-Claude-Code
 Paste your forked repository URL here:
 
 https://github.com/adeitup11/Ultimate-Agentic-DevOps-with-Claude-Code
+
 ---
 
 # Completion Checklist

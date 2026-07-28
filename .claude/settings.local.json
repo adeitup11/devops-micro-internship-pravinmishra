@@ -1,0 +1,36 @@
+{
+  "env": {
+    "AWS_PROFILE": "default",
+    "AWS_REGION": "ap-south-1",
+    "GITHUB_TOKEN": "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"
+  },
+  "enabledMcpjsonServers": [
+    "terraform",
+    "aws"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(open:*)"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "command": ".claude/hooks/user-prompt-submit.sh"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "command": ".claude/hooks/pre-tool-use.sh"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "command": ".claude/hooks/post-tool-use.sh"
+      }
+    ]
+  }
+}
