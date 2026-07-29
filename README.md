@@ -73,7 +73,8 @@ This is not a course. It is an internship-style program — real deployments, re
 <!-- Week 01 → Success Mindset -->
 [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) 
 
-<!-- Week 02 → Agentic AI with Claude Code [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/)
+<!-- Week 02 → Agentic AI with Claude Code  -->
+[![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/)
 
 <!-- Week 03 → Linux & Bash for DevOps -->
 [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/) 
@@ -134,7 +135,7 @@ This is not a course. It is an internship-style program — real deployments, re
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-cloudcomputing-networking-share-7486751974521024512-K14L/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/devops-micro-internship-dmi-cohort-3-week-00-internet-networking-fundamentals-2def3d40edae |
 | 01 | Success Mindset | ✅ Completed | ✅ Completed  Pending |https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-cloudengineering-careergrowth-share-7478536371012304896-LTOK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/adekunle-adepoju-2-0-42aa7d6844ea|
-| 02 | Agentic AI with Claude Code | 🔄 In Progress | 🔄 In Progress | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7487555591901696001-lELI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/week-2-reflection-devops-micro-internship-dmi-cohort-3-with-agentic-ai-559104b22cbe |
+| 02 | Agentic AI with Claude Code | ✅ Completed  | ✅ Completed  | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7487555591901696001-lELI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/week-2-reflection-devops-micro-internship-dmi-cohort-3-with-agentic-ai-559104b22cbe |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmibypravinmishra-devops-git-share-7486131934302232576-uOK5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws  | https://medium.com/@adeitup11/website-deployment-successfully-completed-ce94844ed94a 
 | 04 | Git & GitHub | ✅ Completed| ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmibypravinmishra-devops-git-share-7486131934302232576-uOK5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/devops-micro-internship-dmi-cohort-3-assignment-5-completed-open-source-collaboration-4fd502a36a60
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |

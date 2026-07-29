@@ -6,21 +6,6 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Purpose
 
-In this assignment, you will explore Claude Code’s memory system. You will locate the project memory file, store structured information into it, restart your session, and verify that Claude can recall stored knowledge across sessions without being prompted again.
-
----
-
-# Task 1 — Find the Memory File Location
-
-## Goal
-
-Discover exactly where Claude Code stores memory for this project.
-
-### Evidence
-
-#### Screenshot 1 — Memory file path shown by Claude
-
-Add your screenshot here.
 
 ---
 
@@ -34,13 +19,13 @@ Teach Claude three specific facts about the project and instruct it to save them
 
 #### Screenshot 2 — Claude confirming the memory was saved
 
-Add your screenshot here.
+![alt text](image-35.png)
 
 ---
 
 #### Screenshot 3 — The `MEMORY.md` file open in VS Code showing the saved content
 
-Add your screenshot here.
+![alt text](image-36.png)
 
 ---
 
@@ -54,7 +39,7 @@ Terminate the current Claude Code session and restart it to ensure memory is the
 
 #### Screenshot 4 — VS Code reopened with a fresh Claude Code session showing no previous conversation
 
-Add your screenshot here.
+![alt text](image-37.png)
 
 ---
 
@@ -68,14 +53,13 @@ Run three tests that prove Claude remembers what you told it — without you say
 
 #### Screenshot 5 — Claude recalling hero section colors
 
-Add your screenshot here.
+![alt text](image-38.png)
 
 ---
 
 #### Screenshot 6 — Claude refusing JavaScript request based on memory rule
 
-Add your screenshot here.
-
+![alt text](image-39.png)
 ---
 
 # Submission Instructions
@@ -91,7 +75,7 @@ Add your screenshot here.
 
 Paste your Linkedin post link here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7487555591901696001-lELI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 ---
 
@@ -99,7 +83,7 @@ Paste your Linkedin post link here:
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+https://github.com/adeitup11/my-react-app
 
 ---
 
