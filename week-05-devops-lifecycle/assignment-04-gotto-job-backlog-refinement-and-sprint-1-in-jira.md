@@ -187,7 +187,7 @@ Add a retro comment covering what went well, what to improve, one Scrum pillar o
 
 ---
 
-# LinkedIn Post (Required)
+# Task 10 — LinkedIn Post (Mandatory)
 
 ## Goal
 
@@ -211,7 +211,7 @@ https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-intern
 
 # Submission Instructions
 
-- Add all required screenshots in your submission
+- Add all 14 required screenshots
 - Full name must be visible in required screenshots
 - Do not expose sensitive information (keys, passwords, account IDs)
 
@@ -228,7 +228,7 @@ https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-intern
 - [ ] Task 7: Burndown Chart opened (Screenshot 9)
 - [ ] Task 8: One UI-only increment implemented, committed, deployed, and verified (Screenshots 10–12)
 - [ ] Task 9: Retro comment with one Scrum pillar and one Scrum value (Screenshot 13)
-- [ ] LinkedIn post published and URL submitted (Screenshot 14)
+- [ ] Task 10: Mandatory LinkedIn post published with the live URL, backlog refinement, Sprint planning, one shipped increment, proof, and Screenshot 14
 - [ ] Full Name visible in required screenshots
 - [ ] No sensitive data exposed
 
