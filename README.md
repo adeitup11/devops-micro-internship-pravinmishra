@@ -84,9 +84,8 @@ This is not a course. It is an internship-style program — real deployments, re
 [![Week 04 – Git](./badges/week-04.svg)](./week-04-github/) 
 
 
-
 <!-- Week 05 → DevOps Lifecycle & Agile -->
-<!-- [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/) -->
+[![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/)
 
 <!-- Week 06 → AWS Cloud -->
 <!-- [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/) -->
@@ -138,7 +137,7 @@ This is not a course. It is an internship-style program — real deployments, re
 | 02 | Agentic AI with Claude Code | ✅ Completed  | ✅ Completed  | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7487555591901696001-lELI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/week-2-reflection-devops-micro-internship-dmi-cohort-3-with-agentic-ai-559104b22cbe |
 | 03 | Linux & Bash for DevOps | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmibypravinmishra-devops-git-share-7486131934302232576-uOK5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws  | https://medium.com/@adeitup11/website-deployment-successfully-completed-ce94844ed94a 
 | 04 | Git & GitHub | ✅ Completed| ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmibypravinmishra-devops-git-share-7486131934302232576-uOK5/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/devops-micro-internship-dmi-cohort-3-assignment-5-completed-open-source-collaboration-4fd502a36a60
-| 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7490872443167920128-VdKA/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/completed-assignment-5-gotto-job-backlog-refinement-sprint-1-in-jira-as-part-of-the-b804c8b6a8e2 |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
