@@ -1,5 +1,7 @@
 {
   "env": {
+    "JIRA_SITE_URL": "https://adeitup11.atlassian.net/",
+    "JIRA_EMAIL": "adeitup11@gmail.com",
     "AWS_PROFILE": "default",
     "AWS_REGION": "ap-south-1"
   },
