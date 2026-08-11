@@ -114,11 +114,11 @@ Create a `/sprint-health` skill restricted to read-only Jira tools plus `Read`, 
 
 #### Screenshot 6 — `SKILL.md` frontmatter showing `allowed-tools` limited to read-only Jira tools plus `Read`, with `disable-model-invocation: true`
 
-Add your screenshot here.
+![alt text](image-57.png)
 
 #### Screenshot 7 — `/sprint-health` output showing the full triage report against your real sprint
 
-Add your screenshot here.
+![alt text](image-58.png)
 
 ### Notes You Must Write (Very Important):
 
@@ -128,7 +128,7 @@ I compared the issue keys, titles, statuses, and estimates returned through the 
 
 2. Why does a Scrum Master need this restriction more than almost any other role in this course?
 
-Add your answer here
+
 
 ---
 
@@ -142,13 +142,13 @@ Manually update one ticket on your board in the browser (for example, move a sto
 
 #### Screenshot 8 — Second `/sprint-health` run showing the report now reflects your manual board change
 
-Add your screenshot here.
+![alt text](image-59.png)
 
 ### Notes You Must Write (Very Important):
 
 Map this assignment to Gather → Analyze → Human Act → Verify from Week 3 Assignment 6. Which step did you perform manually in the browser, and why must that step stay human?
 
-Add your answer here
+
 
 ---
 
