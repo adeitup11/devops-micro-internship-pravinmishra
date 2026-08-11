@@ -176,8 +176,7 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7490872443167920128-VdKA/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 
 ---
