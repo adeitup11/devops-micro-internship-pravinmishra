@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-Add your diagram image or link here.
+ ![c](<ChatGPT Image Aug 13, 2026, 09_42_13 PM.png>)
 
 ---
 
@@ -34,13 +34,32 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+ap-south-1 — Asia Pacific (Mumbai)
+
+Item	Value
+Cloud Provider	AWS
+Region Name	Asia Pacific (Mumbai)
+Region Code	ap-south-1
+Availability Zones	2 AZs
+VPC CIDR	10.0.0.0/16
+Architecture	3-tier architecture
+Subnets	6 — 2 Web, 2 App, 2 Database
 
 ---
 
 **Services used:**
 
-Write your answer here.
+Amazon VPC – Networking
+Amazon EC2 – Compute
+Application Load Balancer (ALB) – Load balancing
+Amazon RDS – Database
+AWS IAM – Identity and access management
+Security Groups – Network security
+Internet Gateway (IGW) – Internet connectivity
+Route Tables – Traffic routing
+Amazon EC2 Auto Scaling – High availability and scaling
+AWS Systems Manager (SSM) – EC2 management
+Availability Zones (AZs) – Multi-AZ infrastructure deployment
 
 ---
 
