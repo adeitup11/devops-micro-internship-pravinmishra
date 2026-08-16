@@ -30,13 +30,13 @@ Sign in to the Azure Portal, locate key services (Resource Groups, Virtual Machi
 
 #### Screenshot 1 — Azure Portal homepage after successful login
 
-Add your screenshot here.
+![alt text](image.png)
 
 ---
 
 #### Screenshot 2 — "Subscriptions" section showing the "Free Trial" subscription
 
-Add your screenshot here.
+![alt text](image-1.png)
 
 ---
 
@@ -44,7 +44,7 @@ Add your screenshot here.
 
 Write a three-to-four-line paragraph explaining which Azure services you plan to explore first and why.
 
-Write your answer here.
+I plan to explore Azure Virtual Machines first to understand how to deploy and manage cloud-based servers. I will also explore Azure Storage and Azure SQL Database to learn how to securely store and manage application data. Finally, I plan to use Azure Monitor and Microsoft Entra ID to practice monitoring resources and managing secure access. These services will give me a strong foundation in Azure infrastructure, security, and administration.
 
 ---
 
