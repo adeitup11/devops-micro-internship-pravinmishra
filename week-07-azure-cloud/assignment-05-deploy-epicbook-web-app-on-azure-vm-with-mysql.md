@@ -20,14 +20,13 @@ Create a VNet (10.0.0.0/16) with a public subnet (10.0.1.0/24) for the VM and a 
 
 #### Screenshot 1 — Virtual Network overview showing the 10.0.0.0/16 address space and both subnets
 
-Add your screenshot here.
+![alt text](image-19.png)
 
 ---
 
 #### Screenshot 2 — Public and private NSG inbound rules showing ports 80, 22, and restricted 3306 access
 
-Add your screenshot here.
-
+![alt text](image-18.png)
 ---
 
 #### Screenshot 3 — Public IP and Network Interface association for the Virtual Machine
@@ -46,13 +45,13 @@ Launch an Ubuntu 22.04 LTS VM (Standard B1s or equivalent) in the public subnet,
 
 #### Screenshot 4 — Virtual Machine overview showing Ubuntu, size, public IP, and subnet
 
-Add your screenshot here.
+![alt text](image-20.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful software installation or installed-version checks
 
-Add your screenshot here.
+![alt text](image-21.png)
 
 ---
 
@@ -66,19 +65,19 @@ Clone the EpicBook repository, install dependencies, build the frontend, configu
 
 #### Screenshot 6 — Terminal showing the EpicBook repository cloned and dependencies installed
 
-Add your screenshot here.
+![alt text](image-24.png)
 
 ---
 
 #### Screenshot 7 — Nginx configuration or service status proving the frontend is configured to be served
 
-Add your screenshot here.
+![alt text](image-23.png)
 
 ---
 
 #### Screenshot 8 — Backend process or listening-port evidence (without exposing environment-variable secrets)
 
-Add your screenshot here.
+![alt text](image-25.png)
 
 ---
 
@@ -92,19 +91,19 @@ Create a private Azure Database for MySQL Flexible Server (VNet Integration) in 
 
 #### Screenshot 9 — MySQL Flexible Server overview showing Private access (VNet Integration)
 
-Add your screenshot here.
+![alt text](image-27.png)
 
 ---
 
 #### Screenshot 10 — Networking configuration showing the private subnet and restricted access
 
-Add your screenshot here.
+![alt text](image-26.png)
 
 ---
 
 #### Screenshot 11 — MySQL Client output showing the EpicBook database or imported tables (no password visible)
 
-Add your screenshot here.
+![alt text](image-28.png)
 
 ---
 
