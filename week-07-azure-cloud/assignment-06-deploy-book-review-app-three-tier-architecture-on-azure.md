@@ -20,13 +20,23 @@ Create an architecture diagram and implementation plan identifying the presentat
 
 #### Screenshot 1 — Architecture diagram showing the public entry point, three tiers, network boundaries, and traffic flow
 
-Add your screenshot here.
+![alt text](<ChatGPT Image Aug 21, 2026, 02_00_22 PM.png>)
 
----
+
 
 #### Screenshot 2 — Written architecture assumptions and selected Azure services
 
-Add your screenshot here.
+Architecture Component	Azure Service	Purpose
+Public/Web Tier	Azure Application Gateway	Public HTTPS entry point and traffic routing
+Web Security	Application Gateway WAF	Web attack protection
+Application Tier	Azure App Service	Hosts Node.js/Express application
+Database Tier	Azure Database for MySQL Flexible Server	Persistent application data
+Secrets	Azure Key Vault	Secure storage of credentials and secrets
+Identity	Managed Identity	Secure application-to-Azure authentication
+Monitoring	Azure Monitor	Metrics, alerts and infrastructure monitoring
+Application Monitoring	Application Insights	Application performance and error monitoring
+Logging	Log Analytics Workspace	Centralized log collection and analysis
+Backup	MySQL automated backup	Database backup and point-in-time recovery
 
 ---
 
@@ -40,13 +50,13 @@ Create a dedicated Resource Group and VNet with separate subnets for the web, ap
 
 #### Screenshot 3 — Resource Group overview showing the assignment resources
 
-Add your screenshot here.
+![alt text](image-34.png)
 
 ---
 
 #### Screenshot 4 — VNet overview showing the address space and all required subnets
 
-Add your screenshot here.
+![alt text](image-33.png)
 
 ---
 
@@ -66,7 +76,7 @@ Apply least-privilege NSG rules so traffic flows Internet → public entry point
 
 #### Screenshot 6 — NSG rules proving least-privilege access between the tiers
 
-Add your screenshot here.
+![alt text](image-35.png)
 
 ---
 
@@ -92,7 +102,7 @@ Add your screenshot here.
 
 #### Screenshot 9 — Terminal or service output proving the presentation layer is running
 
-Add your screenshot here.
+![alt text](image-36.png)
 
 ---
 

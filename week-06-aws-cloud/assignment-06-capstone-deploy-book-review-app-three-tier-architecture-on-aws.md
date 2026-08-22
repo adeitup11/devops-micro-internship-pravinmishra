@@ -75,7 +75,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+http://us-east-2.console.aws.amazon.com/vpcconsole/home?region=us-east-2#VpcDetails:VpcId=vpc-05f611a5bf1a9e1b6
 
 ---
 
@@ -89,37 +89,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Screenshot 1 — Web Tier EC2 instance in a public subnet
 
-Add your screenshot here.
+![alt text](image-59.png)
 
 ---
 
 #### Screenshot 2 — App Tier EC2 instance in a private subnet
 
-Add your screenshot here.
+![alt text](image-60.png)
 
 ---
 
 #### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![alt text](image-61.png)
 
 ---
 
 #### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
 
-Add your screenshot here.
+![alt text](image-62.png)
 
 ---
 
 #### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
 
-Add your screenshot here.
+![alt text](image-63.png)
 
 ---
 
 #### Screenshot 6 — Book Review App UI working through the public ALB
 
-Add your screenshot here.
+![alt text](image-64.png)
 
 ---
 
@@ -133,19 +133,25 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+The final deployment successfully established the AWS 3-tier architecture with a custom VPC, public and private subnets, Internet Gateway, route tables, security groups, EC2 instances, load balancing, and an RDS database. The Web Tier EC2 instance successfully ran Nginx and returned HTTP 200 OK, confirming that the web server was operational and reachable. Network access was controlled using security groups, with the database restricted to application-tier access.
 
 ---
 
 **Issues encountered and fixes:**
 
-Write your answer here.
+RDS DB subnet group failed: Initially, the subnet group covered only one Availability Zone. It was fixed by adding a subnet from a second AZ to satisfy the RDS Multi-AZ subnet requirement.
+Backend connected to the wrong database: The Node.js/Sequelize application attempted to connect to 127.0.0.1:3306 instead of the RDS endpoint. This was fixed by updating the application's environment configuration to use the RDS hostname and database credentials.
+
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+AWS Management Console – VPC, EC2, RDS, ALB, security groups, subnets, route tables, and Availability Zones.
+AWS CLI – Resource configuration and verification.
+Node.js / npm / Sequelize – Application deployment and database connection troubleshooting.
+Git/GitHub – Source control and deployment workflow.
+AWS documentation and error messages – Used to investigate RDS subnet/AZ requirements and AWS networking issues.
 
 ---
 
@@ -159,15 +165,15 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7493734272034533376-GUkH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
+
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](image-58.png)
 
 ---
 
