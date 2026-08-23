@@ -20,7 +20,7 @@ Confirm your Azure CLI is authenticated and can see the VM, network, storage acc
 
 #### Screenshot 1 — `az account show` and `az vm list -d -o table` confirming your subscription and running VM (subscription ID partially blurred)
 
-Add your screenshot here.
+![alt text](image-51.png)
 
 ---
 
@@ -34,7 +34,7 @@ Create a `CLAUDE.md` for this workspace that tells Claude what the audit covers 
 
 #### Screenshot 2 — `CLAUDE.md` open in your editor showing the project overview, audit workflow, and safety rules
 
-Add your screenshot here.
+![alt text](image-61.png)
 
 ---
 
@@ -48,7 +48,7 @@ Ask Claude Code to read `CLAUDE.md` and propose a read-only, four-check audit pl
 
 #### Screenshot 3 — Claude Code showing the four-check plan, with no files created or modified
 
-Add your screenshot here.
+![alt text](image-52.png)
 
 ---
 
@@ -62,13 +62,13 @@ Write a Bash script that runs the four checks from Task 3 using read-only `az` c
 
 #### Screenshot 4 — Your script open in your editor, showing the check functions and the `az` commands they call
 
-Add your screenshot here.
+![alt text](image-60.png)
 
 ---
 
 #### Screenshot 5 — Output of `bash -n` (no syntax errors) and `ls -l` showing the script is executable
 
-Add your screenshot here.
+![alt text](image-59.png)
 
 ---
 
@@ -82,7 +82,7 @@ Run the script against your live resources and read the report honestly, even if
 
 #### Screenshot 6 — Script output showing your Full Name and all four checks with a PASS, WARN, or FAIL result
 
-Add your screenshot here.
+![alt text](image-53.png)
 
 ---
 
@@ -96,13 +96,13 @@ Create a Claude Code skill restricted to read-only tools (no `Write`) that runs 
 
 #### Screenshot 7 — Your skill file's frontmatter showing `allowed-tools` without `Write`
 
-Add your screenshot here.
+![alt text](image-54.png)
 
 ---
 
 #### Screenshot 8 — `/azure-audit` output showing the baseline findings and Claude's explanation
 
-Add your screenshot here.
+A![alt text](image-55.png)
 
 ---
 
@@ -116,19 +116,19 @@ Pick one WARN or FAIL finding (or deliberately open an NSG rule to port 22 from 
 
 #### Screenshot 9 — Saved report showing the original finding before the fix
 
-Add your screenshot here.
+![alt text](image-56.png)
 
 ---
 
 #### Screenshot 10 — Terminal output of the remediation command you ran yourself
 
-Add your screenshot here.
+![alt text](image-57.png)
 
 ---
 
 #### Screenshot 11 — Second `/azure-audit` run (or report) showing the finding resolved
 
-Add your screenshot here.
+![alt text](image-58.png)
 
 ---
 
@@ -136,7 +136,65 @@ Add your screenshot here.
 
 Compare this assignment to the AWS audit you built in Week 6: which finding categories map to each other across the two clouds, and what stayed exactly the same about the workflow even though the `az`/`aws` commands are completely different?
 
-Add your answer here
+es. The Week 6 AWS audit and this Azure audit follow essentially the same security-audit pattern, even though the resource names and CLI syntax differ.
+
+Audit category	AWS Week 6 equivalent	Azure assignment equivalent
+Network exposure	Security Groups / NACLs allowing 0.0.0.0/0 to SSH/RDP	NSG rules allowing 0.0.0.0/0 to ports 22/3389
+Storage exposure	S3 bucket public access / bucket policy	Storage Account public blob access
+Disk encryption	EBS volume encryption / KMS configuration	Azure VM OS/data disk encryption
+Database exposure	RDS public accessibility / security-group access to 3306	Azure Database for MySQL public network access
+Monitoring	CloudWatch / CloudTrail evidence	Azure Monitor / diagnostic settings
+Backups	RDS automated backups / retention	Azure Database for MySQL backup/retention
+Evidence	CLI output + screenshots	CLI output + Azure Portal screenshots
+What stayed exactly the same
+
+The workflow is almost cloud-independent:
+
+Read the project instructions first (CLAUDE.md).
+Identify the resources belonging to the deployment.
+Inspect current configuration using read-only commands.
+Look specifically for security exposure, rather than changing anything immediately.
+Compare the actual configuration against a secure expected state.
+Classify findings by severity.
+Capture evidence/screenshots showing the finding or secure configuration.
+Do not remediate during the audit unless remediation is explicitly requested.
+Protect secrets—don't expose credentials, tokens, private keys, or full sensitive identifiers in the evidence.
+Summarize findings and recommendations after the inspection.
+
+The commands changed:
+
+AWS                         Azure
+────────────────────────────────────────
+aws ec2 ...                 az vm ...
+aws ec2 describe-...        az network nsg ...
+aws s3api ...               az storage ...
+aws ec2 describe-volumes    az vm show / disk ...
+aws rds describe-...        az mysql flexible-server ...
+
+But the reasoning didn't change:
+
+Identify resource
+      ↓
+Inspect configuration
+      ↓
+Find exposure/misconfiguration
+      ↓
+Compare with secure baseline
+      ↓
+Assign severity
+      ↓
+Capture evidence
+      ↓
+Recommend remediation
+The biggest lesson
+
+The cloud provider is not the audit methodology.
+
+AWS and Azure use different APIs and terminology, but you're still asking the same fundamental security questions:
+
+Can someone reach something they shouldn't? Is sensitive data exposed? Is data encrypted? Is the database unnecessarily public? Are backups and monitoring configured?
+
+That's why the Week 6 AWS audit transfers well to this Azure assignment: the commands change, but the security thinking and evidence-driven workflow stay the same.
 
 ---
 
