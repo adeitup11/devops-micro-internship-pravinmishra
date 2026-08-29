@@ -62,7 +62,7 @@ Create a dedicated Resource Group and VNet with separate subnets for the web, ap
 
 #### Screenshot 5 — Route-table or Private DNS evidence where applicable
 
-Add your screenshot here.
+![alt text](image-39.png)
 
 ---
 
@@ -82,7 +82,7 @@ Apply least-privilege NSG rules so traffic flows Internet → public entry point
 
 #### Screenshot 7 — Key Vault or approved secret-management configuration (without displaying secret values)
 
-Add your screenshot here.
+![alt text](image-62.png)
 
 ---
 
@@ -96,7 +96,7 @@ Deploy the Book Review App presentation layer on the approved web-tier compute s
 
 #### Screenshot 8 — Web-tier compute overview showing subnet and availability configuration
 
-Add your screenshot here.
+![alt text](image-37.png)
 
 ---
 
@@ -116,19 +116,19 @@ Deploy the Book Review App backend privately in the application subnet, configur
 
 #### Screenshot 10 — Application-tier compute overview showing private subnet placement
 
-Add your screenshot here.
+![alt text](image-38.png)
 
 ---
 
 #### Screenshot 11 — Backend process, service, or listening-port evidence
 
-Add your screenshot here.
+![alt text](image-40.png)
 
 ---
 
 #### Screenshot 12 — Internal health-check or API response (without exposing secrets)
 
-Add your screenshot here.
+![alt text](image-41.png)
 
 ---
 
@@ -142,20 +142,19 @@ Create a private Azure managed database (public access disabled), with availabil
 
 #### Screenshot 13 — Database overview showing private connectivity and public access disabled
 
-Add your screenshot here.
+![alt text](image-42.png)
 
 ---
 
 #### Screenshot 14 — Availability, backup, and retention configuration
 
-Add your screenshot here.
+![alt text](image-43.png)
 
 ---
 
 #### Screenshot 15 — Successful schema or connectivity verification (without exposing credentials)
 
-Add your screenshot here.
-
+![alt text](image-44.png)
 ---
 
 # Task 7 — Configure Traffic Management, Availability, and Monitoring
@@ -168,19 +167,19 @@ Configure the approved public entry service with health probes and backend pools
 
 #### Screenshot 16 — Public entry service showing listener, frontend endpoint, and healthy web targets
 
-Add your screenshot here.
+![alt text](image-45.png)
 
 ---
 
 #### Screenshot 17 — Internal application-tier load-balancing or routing configuration where applicable
 
-Add your screenshot here.
+![alt text](image-46.png)
 
 ---
 
 #### Screenshot 18 — Azure Monitor, diagnostic settings, logs, metrics, or alert evidence
 
-Add your screenshot here.
+![alt text](image-47.png)
 
 ---
 
@@ -194,33 +193,32 @@ Confirm the Book Review App works end to end through the public endpoint, with a
 
 #### Screenshot 19 — Browser showing the Book Review App through the public endpoint
 
-Add your screenshot here.
+http://20.164.211.176/
 
 ---
 
 #### Screenshot 20 — Proof of successful database-backed read and write operations
 
-Add your screenshot here.
+![alt text](image-50.png)
 
 ---
 
 #### Screenshot 21 — Evidence that private tiers are not publicly accessible
 
-Add your screenshot here.
+![alt text](image-48.png)
 
 ---
 
 #### Screenshot 22 — Availability-test and healthy-target evidence
 
-Add your screenshot here.
+![alt text](image-49.png)
 
 ---
 
 #### Public Endpoint
 
-Paste your public endpoint URL here:
 
-`Add your URL here`
+http://20.164.211.176/
 
 ---
 
@@ -228,7 +226,70 @@ Paste your public endpoint URL here:
 
 Summarize what worked, issues encountered and how they were fixed, and the availability/security/secrets/monitoring/backup choices made.
 
-Write your answer here.
+What Worked
+Azure web VM bookreview-web-01 was successfully provisioned and accessed through SSH.
+Nginx was installed and confirmed listening on port 80.
+The Book Review Node.js backend was successfully started from:
+/home/adeitup11/book-review-app/backend/src/server.js.
+The backend successfully listened on port 3001.
+The API returned:
+📚 Book Review API is running...
+Nginx was successfully configured as a reverse proxy from port 80 → port 3001.
+The public endpoint was successfully accessed from a browser and displayed the Book Review API response.
+The application successfully connected to the managed MySQL database using SSL:
+Database 'bookreview' connected successfully with SSL!
+The database schema was successfully updated by the application.
+Issues Encountered and Fixes
+Database DNS resolution issue
+The MySQL hostname initially returned NXDOMAIN.
+This indicated a private DNS/connectivity configuration issue rather than an application-code problem.
+The database connectivity was subsequently established successfully over SSL.
+Nginx initially showed the default welcome page
+Nginx was working, but the default site was still enabled.
+The custom Book Review configuration was pointing to port 3000 while Node was using 3001.
+Fixed proxy_pass to:
+http://127.0.0.1:3001
+Removed /etc/nginx/sites-enabled/default.
+Reloaded Nginx after validating the configuration.
+Nginx returned 504 Gateway Timeout
+Node.js had been suspended using Ctrl+Z.
+The Node process eventually exited.
+Restarting node src/server.js restored the backend.
+Nginx then successfully forwarded requests to the API.
+npm start failed
+The backend package.json did not contain a start script.
+The application was therefore started directly with:
+node src/server.js.
+Availability Choices
+Nginx provides the web-tier entry point and reverse proxy.
+Azure Application Gateway provides the public traffic-management layer.
+Application Gateway backend health/probes are used to verify the web VM is healthy.
+The Node.js service should be converted to a systemd service so it automatically starts after VM reboot and restarts after failures.
+Managed MySQL provides Azure-managed database availability and backup capabilities.
+Security Choices
+The database tier is intended to remain private, with public database access disabled.
+Database access is restricted to the application tier rather than allowing unrestricted Internet access to MySQL port 3306.
+Nginx exposes port 80, while Node.js remains behind Nginx on port 3001.
+Application Gateway provides the controlled public entry point.
+Database connections use SSL/TLS.
+SSH access should remain restricted to an administrative source IP rather than 0.0.0.0/0.
+Network Security Groups are used to restrict traffic between tiers.
+Secrets Management
+Database credentials and connection strings were not exposed in screenshots or evidence.
+.env/credential files should not be committed to Git or exposed through the public endpoint.
+The application uses environment/configuration values for database connectivity rather than hard-coding credentials into the application.
+For a production-style Azure deployment, sensitive database credentials should preferably be stored in Azure Key Vault and accessed using managed identity.
+Monitoring
+Azure Monitor should be used for VM/Application Gateway metrics and health information.
+Application Gateway backend health provides evidence that the web target is available.
+Nginx logs were used during troubleshooting to identify the 504 Gateway Timeout.
+The Nginx error log confirmed that requests were reaching the proxy but the Node upstream was not responding.
+Application logs from server.js confirmed database connectivity, schema updates, and application startup.
+Backup and Retention
+The managed Azure MySQL service is used instead of running MySQL directly on the VM.
+Azure-managed backup and retention settings should be enabled according to the assignment's required retention period.
+Backup/availability configuration should be captured as Screenshot 14.
+Keeping the database managed and private reduces the operational risk associated with maintaining a self-hosted database.
 
 ---
 
