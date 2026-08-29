@@ -20,13 +20,13 @@ Define a VPC (10.0.0.0/16) with a public subnet (10.0.1.0/24) and private subnet
 
 #### Screenshot 1 — Terraform configuration showing the VPC and both subnet CIDR ranges
 
-Add your screenshot here.
+![alt text](image-26.png)
 
 ---
 
 #### Screenshot 2 — Terraform configuration showing the Internet Gateway, public route table, and both Security Groups
 
-Add your screenshot here.
+![alt text](image-27.png)
 
 ---
 
@@ -40,19 +40,19 @@ Use Terraform to launch a t2.micro Ubuntu 22.04 EC2 instance in the public subne
 
 #### Screenshot 3 — Terraform apply output showing successful EC2 provisioning
 
-Add your screenshot here.
+![alt text](image-28.png)
 
 ---
 
 #### Screenshot 4 — EC2 instance running in the AWS Console with the public IP and subnet visible
 
-Add your screenshot here.
+![alt text](image-29.png)
 
 ---
 
 #### Screenshot 5 — Terminal showing successful SSH access and installed software
 
-Add your screenshot here.
+![alt text](image-30.png)
 
 ---
 
@@ -66,13 +66,13 @@ Deploy the EpicBook frontend and backend on the EC2 instance and configure Nginx
 
 #### Screenshot 6 — Terminal showing the EpicBook application files and dependency installation
 
-Add your screenshot here.
+![alt text](image-31.png)
 
 ---
 
 #### Screenshot 7 — Terminal showing the application and Nginx services running
 
-Add your screenshot here.
+![alt text](image-32.png)
 
 ---
 
@@ -86,19 +86,19 @@ Provision a private Amazon RDS MySQL instance (db.t3.micro, Publicly accessible:
 
 #### Screenshot 8 — Terraform apply output showing successful RDS provisioning
 
-Add your screenshot here.
+![alt text](image-33.png)
 
 ---
 
 #### Screenshot 9 — RDS instance in the AWS Console showing the private network configuration and Publicly accessible: No
 
-Add your screenshot here.
+![alt text](image-34.png)
 
 ---
 
 #### Screenshot 10 — Terminal showing successful database initialization or table verification from EC2
 
-Add your screenshot here.
+![alt text](image-35.png)
 
 ---
 
@@ -112,13 +112,13 @@ Confirm EpicBook is accessible through the EC2 public IP and that navigation, ca
 
 #### Screenshot 11 — Browser showing the EpicBook application through the EC2 public IP
 
-Add your screenshot here.
+![alt text](image-36.png)
 
 ---
 
 #### Screenshot 12 — Browser showing a working product, cart, order summary, or checkout flow
 
-Add your screenshot here.
+![alt text](image-37.png)
 
 ---
 
@@ -126,7 +126,7 @@ Add your screenshot here.
 
 Write a short note describing any issue you faced, how you fixed it, and what you learned.
 
-Write your answer here.
+I encountered a few issues during the deployment, including Terraform configuration errors, EC2 application setup problems, and an EpicBook database connection error. The main application issue was that EpicBook was trying to connect to MySQL on 127.0.0.1:3306 instead of the private Amazon RDS endpoint. I updated the database configuration to use RDS, verified the connection, and confirmed that the required bookstore tables were created successfully. I also configured Nginx to proxy traffic to the application on port 8080. This experience taught me the importance of troubleshooting each infrastructure layer separately and verifying connectivity between EC2, Nginx, the application, and RDS before testing the full application end-to-end.
 
 ---
 
@@ -142,13 +142,13 @@ Publish a LinkedIn post about what you achieved in this assignment, with public 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://lnkd.in/p/eu7Z7vbn
 
 ---
 
 #### Screenshot 13 — Published LinkedIn post showing the text and at least one image or proof
 
-Add your screenshot here.
+![alt text](image-38.png)
 
 ---
 
