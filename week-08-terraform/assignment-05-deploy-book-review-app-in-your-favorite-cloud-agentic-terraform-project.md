@@ -20,19 +20,19 @@ Create a custom VPC/VNet (10.0.0.0/16) with six subnets across two Availability 
 
 #### Screenshot 1 — VPC or VNet details showing 10.0.0.0/16
 
-Add your screenshot here.
+![alt text](image-40.png)
 
 ---
 
 #### Screenshot 2 — Subnet list showing all six subnets, their tiers, CIDR ranges, and Availability Zones
 
-Add your screenshot here.
+![alt text](image-41.png)
 
 ---
 
 #### Screenshot 3 — Terraform plan or cloud networking view showing the required routing and tier isolation
 
-Add your screenshot here.
+![alt text](image-42.png)
 
 ---
 
@@ -46,25 +46,25 @@ Configure tier-specific Security Groups/NSGs (Web Tier HTTP 80, App Tier 3001 on
 
 #### Screenshot 4 — Web, App, and Database Security Group or NSG rules
 
-Add your screenshot here.
+![alt text](image-43.png)
 
 ---
 
 #### Screenshot 5 — Public frontend load balancer configuration
 
-Add your screenshot here.
+![alt text](image-68.png)
 
 ---
 
 #### Screenshot 6 — Internal backend load balancer configuration
 
-Add your screenshot here.
+![alt text](image-44.png)
 
 ---
 
 #### Screenshot 7 — Healthy frontend and backend targets or backend pools
 
-Add your screenshot here.
+![alt text](image-45.png)
 
 ---
 
@@ -78,19 +78,19 @@ Deploy the Next.js Web Tier behind Nginx on port 80 in the public subnets, and t
 
 #### Screenshot 8 — EC2 or Azure VM dashboard showing the frontend and backend VMs
 
-Add your screenshot here.
+![alt text](image-46.png)
 
 ---
 
 #### Screenshot 9 — Nginx status or frontend response on the Web Tier
 
-Add your screenshot here.
+![alt text](image-65.png)
 
 ---
 
 #### Screenshot 10 — Backend API response through the permitted internal path
 
-Add your screenshot here.
+![alt text](image-67.png)
 
 ---
 
@@ -104,31 +104,31 @@ Deploy a private managed MySQL database (Amazon RDS Multi-AZ or Azure Database f
 
 #### Screenshot 11 — Amazon RDS or Azure Database dashboard showing the primary database and read replica
 
-Add your screenshot here.
+![alt text](image-47.png)
 
 ---
 
 #### Screenshot 12 — Evidence of private database networking and permitted App Tier access
 
-Add your screenshot here.
+![alt text](image-48.png)
 
 ---
 
 #### Screenshot 13 — Functional Book Review App homepage and login flow
 
-Add your screenshot here.
+![alt text](image-69.png)
 
 ---
 
 #### Screenshot 14 — Functional review flow with working backend API and database integration
 
-Add your screenshot here.
+![alt text](image-70.png)
 
 ---
 
 #### Screenshot 15 (optional) — Application logs or terminal output
 
-Add your screenshot here.
+
 
 ---
 
@@ -136,7 +136,43 @@ Add your screenshot here.
 
 Report the cloud platform used (AWS or Azure), your Terraform code structure (`main.tf`, `variables.tf`, `outputs.tf`, and supporting files), a link/description of your architecture diagram, and the Public Load Balancer DNS used to access the frontend.
 
-Write your answer here.
+### Cloud Platform
+
+**Azure** was used as the cloud platform for this project. The infrastructure was provisioned using **Terraform** in the **South Africa North** Azure region.
+
+### Terraform Code Structure
+
+The Terraform configuration is organized into a root configuration with reusable modules:
+
+* **`main.tf`** — Defines and connects the major infrastructure modules and resources.
+* **`variables.tf`** — Defines configurable inputs such as the resource group, Azure region, VNet address space, subnet CIDRs, and administrative source IP.
+* **`outputs.tf`** — Exposes useful deployment information such as resource identifiers and frontend access information.
+* **`terraform.tfvars`** — Supplies project-specific values without hard-coding them into the main configuration.
+* **`providers.tf`** — Configures the AzureRM Terraform provider.
+* **`modules/network/`** — VNet and subnet configuration.
+* **`modules/security/`** — Network Security Groups and security rules.
+* **`modules/web_compute/`** — Private web-tier virtual machines and networking.
+* **`modules/app_compute/`** — Private application-tier virtual machines and networking.
+* **`modules/internal_load_balancer/`** — Internal load balancing for the application tier.
+* **`modules/public_load_balancer/`** — Public Application Gateway/load-balancing layer for frontend access.
+* **`modules/database/`** — Private Azure Database for MySQL Flexible Server, database, private DNS, and read replica.
+
+The architecture follows a three-tier design: **public frontend/load-balancing → private web tier → private application tier → private database tier**.
+
+### Architecture Diagram
+
+The architecture diagram illustrates the flow:
+
+**Internet → Public Application Gateway → Private Web VMs → Internal Load Balancer → Private App VMs → Private MySQL Database**
+
+The diagram also shows the VNet, subnet separation, Network Security Groups, private DNS, and the two web/application instances.
+
+### Public Load Balancer DNS
+
+The frontend is accessed through the **public Application Gateway**. The public endpoint/DNS used for the application should be taken from the Terraform output or Azure portal for the deployed Application Gateway.
+
+**Public front**
+
 
 ---
 
@@ -152,13 +188,13 @@ Publish a LinkedIn post about what you achieved in this assignment, with public 
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-activity-7499545460890656776-GnO6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 ---
 
 #### Screenshot 16 — Published LinkedIn post showing the text and at least one image or proof
 
-Add your screenshot here.
+![alt text](image-39.png)
 
 ---
 
