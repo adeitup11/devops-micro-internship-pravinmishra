@@ -128,7 +128,7 @@ Deploy a private managed MySQL database (Amazon RDS Multi-AZ or Azure Database f
 
 #### Screenshot 15 (optional) — Application logs or terminal output
 
-
+![alt text](image-71.png)
 
 ---
 
