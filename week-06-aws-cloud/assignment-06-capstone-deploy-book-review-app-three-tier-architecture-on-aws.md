@@ -1,6 +1,6 @@
-# Assignment 6 — Capstone: Deploy Book Review App (Three-Tier Architecture) on AWS
+# Assignment 6 — Capstone Assignment — Deploy Book Review App (Three-Tier Architecture) on AWS
 
-Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
+Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 ---
 
@@ -47,7 +47,7 @@ Subnets	6 — 2 Web, 2 App, 2 Database
 
 ---
 
-**Services used:**
+**Services:**
 
 Amazon VPC – Networking
 Amazon EC2 – Compute
@@ -87,37 +87,37 @@ Capture visual proof of every tier and load balancer.
 
 ### Evidence
 
-#### Screenshot 1 — Web Tier EC2 instance in a public subnet
+#### Web EC2
 
 ![alt text](image-59.png)
 
 ---
 
-#### Screenshot 2 — App Tier EC2 instance in a private subnet
+#### App EC2
 
 ![alt text](image-60.png)
 
 ---
 
-#### Screenshot 3 — Public Application Load Balancer configuration or healthy targets
+#### Public ALB
 
 ![alt text](image-61.png)
 
 ---
 
-#### Screenshot 4 — Internal Application Load Balancer configuration or healthy targets
+#### Internal ALB
 
 ![alt text](image-62.png)
 
 ---
 
-#### Screenshot 5 — Amazon RDS for MySQL showing Multi-AZ and the read replica
+#### RDS + Replica
 
 ![alt text](image-63.png)
 
 ---
 
-#### Screenshot 6 — Book Review App UI working through the public ALB
+#### App UI proof
 
 ![alt text](image-64.png)
 
@@ -137,7 +137,7 @@ The final deployment successfully established the AWS 3-tier architecture with a
 
 ---
 
-**Issues encountered and fixes:**
+**Issues + fixes:**
 
 RDS DB subnet group failed: Initially, the subnet group covered only one Availability Zone. It was fixed by adding a subnet from a second AZ to satisfy the RDS Multi-AZ subnet requirement.
 Backend connected to the wrong database: The Node.js/Sequelize application attempted to connect to 127.0.0.1:3306 instead of the RDS endpoint. This was fixed by updating the application's environment configuration to use the RDS hostname and database credentials.
@@ -171,7 +171,7 @@ https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-intern
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot of LinkedIn post
 
 ![alt text](image-58.png)
 
@@ -217,4 +217,4 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
