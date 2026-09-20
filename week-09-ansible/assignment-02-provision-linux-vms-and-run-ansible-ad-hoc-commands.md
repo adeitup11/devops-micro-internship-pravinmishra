@@ -127,7 +127,7 @@ Verify that each managed VM can be accessed from the Ansible controller using SS
 
 ### Notes
 
-Add your task notes here.
+completed
 
 ---
 
@@ -216,15 +216,14 @@ completed
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-ansible-azure-share-7507160115981004801-Ug89/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![alt text](image-35.png)
 
 ---
 
@@ -234,37 +233,45 @@ Answer the following in your own words:
 
 **1. What is the purpose of an Ansible inventory file?**
 
-Add your answer here.
+An Ansible inventory file lists and organizes the target servers managed by Ansible. It defines hostnames, IP addresses, group memberships, and connection variables (such as SSH users and key paths), allowing Ansible to know which hosts to target and how to connect to them.
 
 ---
 
 **2. What is the difference between the `web`, `app`, and `db` groups in your inventory?**
 
-Add your answer here.
+These groups logically separate infrastructure nodes based on their architectural layer:
+
+web: Targets reverse proxies or front-end servers (e.g., Nginx) responsible for handling public client requests.
+
+app: Targets application servers hosting backend logic and API services (e.g., Node.js or Python apps).
+
+db: Targets database servers (e.g., MySQL or PostgreSQL) responsible for data storage and persistence.
 
 ---
 
 **3. What does the Ansible `ping` module verify?**
 
-Add your answer here.
+The ping module tests basic connectivity to managed hosts. It confirms that Ansible can successfully reach the remote server over SSH, authenticate, and execute Python scripts on the remote host.
 
 ---
 
 **4. Why do package installation commands require `--become`?**
 
-Add your answer here.
+Installing system-level packages modifies system binaries and configuration directories (such as /etc or /var). These actions require administrative (root) privileges, and --become instructs Ansible to execute the task using privilege escalation (sudo).
 
 ---
 
 **5. When would you use an ad-hoc command instead of a playbook?**
 
-Add your answer here.
+Ad-hoc commands are best used for quick, single-use administrative tasks where writing a full playbook isn't necessary—such as checking server uptime, restarting a single service, running a quick ping check, or taking a rapid inventory status snapshot across servers.
 
 ---
 
 **6. What is one challenge you faced while setting up SSH or inventory, and how did you fix it?**
 
-Add your answer here.
+Challenge: Attempting to connect to managed hosts failed with an UNREACHABLE or Permission denied (publickey) error when executing Ansible commands.
+
+Fix: Updated the inventory.ini file to explicitly define ansible_ssh_private_key_file=~/.ssh/id_ed25519 and ansible_user=azureuser, and adjusted local key permissions using chmod 600 ~/.ssh/id_ed25519 to establish an authenticated SSH session.
 
 ---
 
