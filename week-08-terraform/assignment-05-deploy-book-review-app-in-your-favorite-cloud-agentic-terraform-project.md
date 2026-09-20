@@ -161,7 +161,6 @@ The architecture follows a three-tier design: **public frontend/load-balancing �
 
 ### Architecture Diagram
 
-The architecture diagram illustrates the flow:
 
 **Internet → Public Application Gateway → Private Web VMs → Internal Load Balancer → Private App VMs → Private MySQL Database**
 
@@ -191,6 +190,7 @@ https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-intern
 #### Screenshot 16 — Published LinkedIn post showing the text and at least one image or proof
 
 ![alt text](image-39.png)
+
 ---
 
 # Submission Instructions
