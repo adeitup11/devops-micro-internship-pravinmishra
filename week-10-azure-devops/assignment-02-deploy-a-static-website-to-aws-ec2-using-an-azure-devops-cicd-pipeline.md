@@ -36,7 +36,7 @@ Add a screenshot of Azure Repos showing:
 * Project files
 * `index.html`
 
-Add your screenshot here.
+![alt text](image-9.png)
 
 ---
 
@@ -65,7 +65,7 @@ Add a screenshot of the saved SSH Service Connection **Overview** page showing:
 * Service Connection name
 * SSH connection type
 
-Add your screenshot here.
+![alt text](image-10.png)
 
 > Do not expose a password, SSH private key, passphrase, or another credential.
 
@@ -91,7 +91,7 @@ Add a screenshot of `azure-pipelines.yml` open in the Azure Repos editor showing
 * `CopyFilesOverSSH@0` task
 * `SSH@0` verification task
 
-Add your screenshot here.
+![alt text](image-11.png)
 
 > Ensure that no password, SSH private key, PAT, or AWS credential is visible.
 
@@ -115,7 +115,7 @@ Add a screenshot of the successful pipeline run and log summary showing:
 * Remote-verification step completed
 * Your Full Name visible in the pipeline output
 
-Add your screenshot here.
+![alt text](image-12.png)
 
 ---
 
@@ -136,15 +136,15 @@ Add a browser screenshot showing:
 * Your Full Name
 * Updated website content after the automatic deployment
 
-Add your screenshot here.
+![alt text](image-13.png)
 
 ## Final Website URL
 
-`http://<target-vm-public-ip>`
+`http://https://20.164.32.50/`
 
 Replace the placeholder with your actual website URL:
 
-[Paste your final website URL here]
+https://20.164.32.50/
 
 ---
 
@@ -152,7 +152,7 @@ Replace the placeholder with your actual website URL:
 
 Write a short summary of the completed CI/CD workflow.
 
-[Write your summary here.]
+I imported the Azure Static Website into Azure Repos and personalized it with my full name. I then used an Azure Ubuntu VM as the deployment target, configured Nginx and /var/www/html with Ansible, and created an Azure DevOps SSH service connection for secure access. The YAML pipeline uses my self-hosted Azure DevOps agent, triggers on pushed commits, copies the website files to the VM with CopyFilesOverSSH@0, and verifies the deployment with SSH@0. The pipeline completed successfully, and the website was verified through the VM’s public IP.
 
 ---
 
@@ -171,7 +171,7 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here]
+https://lnkd.in/p/drstX_gx
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 
