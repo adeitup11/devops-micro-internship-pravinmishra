@@ -94,10 +94,10 @@ This is not a course. It is an internship-style program — real deployments, re
  [![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/) 
 
 <!-- Week 08 → Terraform -->
-<!-- [![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/) -->
+[![Week 08 – Terraform](./badges/week-08.svg)](./week-08-terraform/)
 
 <!-- Week 09 → Ansible -->
-<!-- [![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) -->
+[![Week 09 – Ansible](./badges/week-09.svg)](./week-09-ansible/) 
 
 <!-- Week 10 → Azure DevOps CI/CD -->
 <!-- [![Week 10 – CI/CD](./badges/week-10.svg)](./week-10-azure-devops/) -->
@@ -141,8 +141,8 @@ This is not a course. It is an internship-style program — real deployments, re
 | 06 | AWS Cloud | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7493734272034533376-GUkH/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://adeitup11.github.io/dmi-week6-blog/ 
 | 07 | Azure Cloud | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-share-7498121233222348800-6STL/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws  | https://adeitup11.github.io/dmi-week6-blog/assigment-6/azure-book-review.html |
 | 08 | Terraform | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_dmi-devops-micro-internship-with-agentic-activity-7499545460890656776-GnO6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/aws-terraform-deployment-dmi-cohort-3-c0f31177139a |
-| 09 | Ansible | ⬜ Not Started | ⏳ Pending | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-ansible-azure-share-7507160115981004801-Ug89/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/030df980c9e0 |
-| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
+| 09 | Ansible | ✅ Completed | ✅ Completed | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-ansible-azure-share-7507160115981004801-Ug89/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/030df980c9e0 |
+| 10 | Azure DevOps (CI/CD) | 🔄 In Progress  | 🔄 In Progress | https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_azuredevops-devops-azure-share-7510021073468338176-T3QS/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws | https://medium.com/@adeitup11/devops-project-configuring-a-self-hosted-azure-devops-agent-on-ubuntu-43c13a9b01e6 |
 | 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
 | 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
 | 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
