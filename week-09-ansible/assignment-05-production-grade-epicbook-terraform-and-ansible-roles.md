@@ -556,7 +556,7 @@ Verify that the EpicBook application is running, accessible in the browser, and 
 
 #### Screenshot 27 — Browser showing the EpicBook application loaded from `http://<public_ip>`
 
-Add your screenshot here.
+![alt text](image-102.png)
 
 ---
 
@@ -602,7 +602,7 @@ Fix: Updated group_vars/web.yml with the correct Azure MySQL Flexible Server hos
 
 #### Screenshot — Published LinkedIn post
 
-![alt text](image-51.png)
+![alt text](image-36.png)
 
 ---
 

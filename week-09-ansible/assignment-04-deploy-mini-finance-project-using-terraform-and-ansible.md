@@ -160,7 +160,7 @@ Screenshot must show:
 - Play 3 targeting `localhost`
 - The `uri` verification and `assert` condition
 
-Add your screenshot here.
+![alt text](image-103.png)
 
 ---
 
@@ -381,7 +381,6 @@ mini-finance/
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
 
 `https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-ansible-azure-share-7507160115981004801-Ug89/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws`
 
