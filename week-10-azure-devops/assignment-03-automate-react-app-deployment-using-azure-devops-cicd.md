@@ -37,7 +37,7 @@ Add a screenshot of Azure Repos showing:
 * `main` branch
 * Project files
 
-Add your screenshot here.
+![alt text](image-14.png)
 
 ---
 
@@ -81,7 +81,7 @@ Add a screenshot of the Azure Pipeline YAML open in the editor showing:
 * Publish stage
 * Deploy stage
 
-Add your screenshot here.
+![alt text](image-20.png)
 
 > Do not expose passwords, private keys, tokens, or cloud credentials.
 
@@ -104,7 +104,7 @@ Add a screenshot of one Azure DevOps pipeline run showing all four stages succee
 * Publish
 * Deploy
 
-Add your screenshot here.
+![alt text](image-15.png)
 
 ---
 
@@ -122,7 +122,7 @@ Add a screenshot of the pipeline SSH verification log or VM terminal showing the
 
 `/var/www/html`
 
-Add your screenshot here.
+![alt text](image-17.png)
 
 ---
 
@@ -143,15 +143,15 @@ Add a browser screenshot showing:
 * Your Full Name
 * Deployment date
 
-Add your screenshot here.
+![alt text](image-19.png)
 
 ## Final Application URL
 
-`http://<vm-public-ip>`
+`http://20.164.32.50/`
 
 Replace the placeholder and paste your final application URL below:
 
-[Paste your final application URL here.]
+[http://20.164.32.50/]
 
 ---
 
@@ -159,7 +159,16 @@ Replace the placeholder and paste your final application URL below:
 
 Write a short explanation of the CI/CD workflow you created.
 
-[Write your summary here.]
+CI/CD Workflow Summary
+This CI/CD pipeline automates the complete build, test, publish, and deployment lifecycle for a React application using Azure DevOps and an Ubuntu web server running Nginx.
+
+Build Stage: Triggers automatically upon commits to the main branch. It sets up Node.js, installs dependencies, compiles the React application into production static assets, and publishes the output as a pipeline artifact.
+
+Test Stage: Downloads the build artifact, sets up the Node environment, and executes non-interactive tests to validate code quality and application stability.
+
+Publish Stage: Packages and validates the tested build assets, preparing the final deployment package as a pipeline artifact.
+
+Deploy Stage: Establishes a secure connection to the remote target VM using an Azure DevOps SSH Service Connection. It transfers the production build directly into /var/www/html via CopyFilesOverSSH@0 and executes remote verification commands (ls, systemctl, curl) to ensure Nginx is actively serving the updated React application.
 
 ---
 
@@ -174,11 +183,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![alt text](image-18.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-ansible-azure-share-7507160115981004801-Ug89/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 > Do not expose VM passwords, tokens, private keys, cloud credentials, or other sensitive information.
 
