@@ -6,7 +6,7 @@ Part of the DevOps Micro Internship (DMI) — Agentic AI Track
 
 ## Student Information
 
-**Full Name:** [Enter your full name]
+**Full Name:** Adekunle Adepoju
 
 **GitHub Repository or Fork URL:** [Paste your repository URL]
 

@@ -70,7 +70,7 @@ Add a screenshot of the Infrastructure Pipeline run showing:
 * `backend_private_ip`
 * `mysql_fqdn`
 
-Add your screenshot here.
+![alt text](image-22.png)
 
 > Do not expose the MySQL password, Client Secret, Terraform state, SSH private key, or another sensitive value.
 
@@ -86,7 +86,7 @@ Add a screenshot of the Azure Portal Resource Group overview showing:
 * Azure Database for MySQL Flexible Server
 * Related EpicBook resources
 
-Add your screenshot here.
+![alt text](image-21.png)
 
 > Hide sensitive IDs, credentials, and database details.
 
@@ -124,7 +124,7 @@ Run the Application Pipeline to configure the VMs, deploy EpicBook, and verify t
 
 Add a screenshot of the Application Pipeline run summary showing all required stages or jobs succeeded.
 
-Add your screenshot here.
+![alt text](image-25.png)
 
 ---
 
@@ -137,7 +137,7 @@ Add a screenshot of the Application Pipeline log showing:
 * Zero failed hosts
 * Zero unreachable hosts
 
-Add your screenshot here.
+![alt text](image-23.png)
 
 > Do not expose the SSH private key, MySQL password, Client Secret, or complete database connection string.
 
@@ -162,7 +162,7 @@ Add a browser screenshot showing:
 
 The screenshot may show a product, cart, or successful order view.
 
-Add your screenshot here.
+![alt text](image-24.png)
 
 > Do not expose credentials or sensitive information.
 
@@ -172,15 +172,15 @@ Add your screenshot here.
 
 ## Frontend Application URL
 
-[Paste your final EpicBook application URL here.]
+http://102.37.108.124/
 
 ## Infrastructure Repository URL
 
-[Paste your Infrastructure Repository URL here.]
+https://github.com/adeitup11/devops-micro-internship-pravinmishra
 
 ## Application Repository URL
 
-[Paste your Application Repository URL here.]
+https://github.com/adeitup11/terraform-azure-vm
 
 ---
 
@@ -188,7 +188,15 @@ Add your screenshot here.
 
 Write a short explanation of why separate Infrastructure and Application Repositories were used.
 
-[Write your explanation here.]
+Separate infrastructure and application repositories were used to implement the separation of concerns principle and establish a clean boundary between infrastructure provisioning and software code management.
+
+Here is why this separation is beneficial:
+
+Independent Lifecycles: Infrastructure (managed via Terraform/Ansible) changes infrequently and follows strict change control, whereas application code (Node.js) updates frequently through continuous deployment.
+
+Access Control & Security: Restricting infrastructure access to DevOps or platform engineers protects critical cloud resources, while application developers can freely commit and deploy application code.
+
+Reusability & Modularity: Decoupling the codebase prevents tight coupling, allowing the infrastructure code to provision resources independently of what specific application runs on top of them.
 
 ---
 
@@ -201,7 +209,15 @@ Write a short explanation of how the following non-sensitive Terraform outputs w
 * `backend_private_ip`
 * `mysql_fqdn`
 
-[Write your explanation here.]
+Separate infrastructure and application repositories were used to enforce the principle of separation of concerns, decoupling the environment provisioning layer from the software code layer.
+
+Here are the key reasons for this architectural decision:
+
+Independent Lifecycles: Infrastructure (provisioned via Terraform or Ansible) changes infrequently and follows strict change management, whereas application code updates continuously through iterative deployments.
+
+Access Control & Security: Restricting infrastructure code access to platform or DevOps engineers protects critical cloud resources, while application developers can independently commit code without altering infrastructure states.
+
+Modularity and Reusability: Decoupling repositories prevents tight coupling, allowing the infrastructure configuration to be reused or scaled independently of what specific application runs on top of it.
 
 ---
 
@@ -216,11 +232,11 @@ Add a screenshot of your LinkedIn post showing:
 * Post text
 * At least one image or link
 
-Add your screenshot here.
+![alt text](image-18.png)
 
 ## LinkedIn Post URL
 
-[Paste your public LinkedIn post URL here.]
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-ansible-azure-share-7507160115981004801-Ug89/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 Your post must include:
 

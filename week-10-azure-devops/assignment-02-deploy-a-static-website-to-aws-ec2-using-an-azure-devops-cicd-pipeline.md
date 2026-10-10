@@ -140,11 +140,8 @@ Add a browser screenshot showing:
 
 ## Final Website URL
 
-`http://https://20.164.32.50/`
-
-Replace the placeholder with your actual website URL:
-
 https://20.164.32.50/
+
 
 ---
 
@@ -171,7 +168,7 @@ Add your screenshot here.
 
 ## LinkedIn Post URL
 
-https://lnkd.in/p/drstX_gx
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-ansible-azure-share-7507160115981004801-Ug89/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 > Do not expose AWS credentials, SSH private keys, passwords, PATs, or other sensitive information.
 
