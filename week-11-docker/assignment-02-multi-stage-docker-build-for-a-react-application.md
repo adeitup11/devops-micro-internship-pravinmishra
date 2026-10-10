@@ -20,7 +20,7 @@ Clone `https://github.com/pravinmishraaws/my-react-app.git` and create a `.docke
 
 #### Screenshot 1 — Contents of the `.dockerignore` file
 
-Add your screenshot here.
+![alt text](image-9.png)
 
 ---
 
@@ -34,13 +34,13 @@ Create `Dockerfile.single`, build `react-single`, and run it on port 3000.
 
 #### Screenshot 2 — Contents of `Dockerfile.single`
 
-Add your screenshot here.
+![alt text](image-11.png)
 
 ---
 
 #### Screenshot 3 — Browser displaying the application running from the single-stage container
 
-Add your screenshot here.
+![alt text](image-10.png)
 
 ---
 
@@ -54,13 +54,13 @@ Create a multi-stage Dockerfile with separate build and Nginx runtime stages, bu
 
 #### Screenshot 4 — Contents of the multi-stage Dockerfile
 
-Add your screenshot here.
+![alt text](image-12.png)
 
 ---
 
 #### Screenshot 5 — Browser displaying the application running from the multi-stage container
 
-Add your screenshot here.
+![alt text](image-13.png)
 
 ---
 
@@ -74,7 +74,7 @@ Compare the single-stage and multi-stage image sizes and calculate the percentag
 
 #### Screenshot 6 — Docker image list showing both image sizes
 
-Add your screenshot here.
+![alt text](image-14.png)
 
 ---
 
@@ -88,15 +88,21 @@ Write a 5–8 line analysis covering the percentage reduction, security benefits
 
 #### Screenshot 7 — Analysis included in your submission document
 
-Add your screenshot here.
+![alt text](image-15.png)
 
 ---
 
 ### Notes
 
-Write your analysis here.
+### Analysis: Single-Stage vs. Multi-Stage Docker Build
 
-Write your answer here.
+1. The single-stage Docker image size was **844.74 MB**, while the multi-stage image size was **90.61 MB**.
+2. The multi-stage build reduced the image size by **89.27%**, saving approximately **754.13 MB**.
+3. The multi-stage build improves security by excluding Node.js, source code, and development dependencies from the final Nginx runtime image.
+4. The smaller image can reduce image-pull times, storage requirements, and deployment time.
+5. The single-stage image includes build tools and dependencies that are unnecessary for serving the finished React application.
+6. Both Dockerfiles use `COPY package*.json ./` before copying the application source, allowing Docker to reuse the dependency-installation cache when package files remain unchanged.
+7. Overall, the multi-stage build is more efficient for production because it provides a smaller runtime image with a reduced attack surface.
 
 ---
 
@@ -120,15 +126,11 @@ Create a LinkedIn post describing what you built, what a multi-stage Docker buil
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
 
 ---
 
