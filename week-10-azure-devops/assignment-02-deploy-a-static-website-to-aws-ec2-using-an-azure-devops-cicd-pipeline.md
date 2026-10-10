@@ -164,7 +164,7 @@ Add a screenshot of your LinkedIn post containing:
 * Three to five lines describing the CI/CD workflow
 * A screenshot of the successful pipeline or deployed website
 
-Add your screenshot here.
+![alt text](image-18.png)
 
 ## LinkedIn Post URL
 
