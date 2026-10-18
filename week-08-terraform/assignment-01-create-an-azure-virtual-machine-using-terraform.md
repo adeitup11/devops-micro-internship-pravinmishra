@@ -107,16 +107,38 @@ I learned how to use Terraform to define and provision Azure infrastructure, inc
 
 ---
 
+# Task 6 — Share Your Terraform Progress on WhatsApp
+
+## Goal
+
+Share your Terraform deployment progress on WhatsApp by using Screenshot 8, the provided Terraform caption, and your generated DMI Leaderboard progress link.
+
+### Evidence
+
+#### Screenshot 12 — Published WhatsApp Status showing your Terraform deployment progress and DMI Leaderboard progress link
+
+Add your screenshot here.
+
+> Ensure that no passwords, account IDs, subscription IDs, private phone numbers, or personal messages are visible.
+
+---
+
 # Submission Instructions
 
+<<<<<<< HEAD
 - Add all required screenshots in your submission
 - Include the VM public IP from the Terraform output
 - Do not expose Azure credentials, subscription details, or passwords
+=======
+- Complete all tasks in sequence and include all required screenshots specified in Tasks 0–6.
+- Do not expose passwords, keys, account IDs, or other sensitive information in screenshots.
+>>>>>>> upstream/main
 
 ---
 
 # Completion Checklist
 
+<<<<<<< HEAD
 - [ ] Task 1: `terraform-azure-vm` project created with all required resources defined (Screenshots 1–2)
 - [ ] Task 2: `terraform init` completed successfully (Screenshot 3)
 - [ ] Task 3: Plan reviewed and `terraform apply` completed, public IP recorded (Screenshots 4–6)
@@ -124,6 +146,28 @@ I learned how to use Terraform to define and provision Azure infrastructure, inc
 - [ ] Task 5: `terraform destroy` completed successfully (Screenshot 8)
 - [ ] Learning/issues paragraph written (Notes)
 - [ ] No sensitive information exposed
+=======
+- Installed Terraform and verified it using `terraform version`
+- Installed Azure CLI and verified it using `az version`
+- Signed in to Azure using `az login`
+- Confirmed the correct Azure subscription
+- Installed and enabled the HashiCorp Terraform extension in VS Code
+- Created the `terraform-azure-vm` project directory and `main.tf`
+- Added the Terraform and AzureRM provider configuration
+- Defined the resource group, virtual network, subnet, public IP, and network interface
+- Defined the Linux virtual machine with username and password-based authentication
+- Added the Terraform output for the VM public IP address
+- Completed `terraform init` successfully
+- Reviewed the Terraform execution plan using `terraform plan`
+- Completed `terraform apply` successfully
+- Captured and recorded the VM public IP using `terraform output`
+- Verified that the VM is running using Azure CLI
+- Completed `terraform destroy` successfully
+- Shared Terraform deployment progress on WhatsApp by following Task 6
+- Captured a screenshot of the published WhatsApp Status
+- Captured all required screenshots
+- Checked that no passwords, keys, account IDs, or other sensitive information are visible in the screenshots
+>>>>>>> upstream/main
 
 ---
 
@@ -147,4 +191,8 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
+<<<<<<< HEAD
 *This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+=======
+*This submission is part of DevOps Micro Internship (DMI) — Agentic AI Track.*
+>>>>>>> upstream/main

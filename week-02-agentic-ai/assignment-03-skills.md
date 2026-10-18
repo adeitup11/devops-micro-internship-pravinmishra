@@ -96,7 +96,11 @@ https://github.com/adeitup11/Ultimate-Agentic-DevOps-with-Claude-Code
 
 Paste your forked repository URL here:
 
+<<<<<<< HEAD
 https://github.com/adeitup11/Ultimate-Agentic-DevOps-with-Claude-Code
+=======
+`Add your URL here`
+>>>>>>> upstream/main
 
 ---
 
