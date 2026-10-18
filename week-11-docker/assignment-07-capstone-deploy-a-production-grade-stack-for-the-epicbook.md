@@ -22,7 +22,7 @@ Review the EpicBook repository and design the intended application architecture.
 
 Add a terminal screenshot showing the EpicBook project structure after cloning the repository.
 
-Add your screenshot here.
+![alt text](image-87.png)
 
 ---
 
@@ -41,7 +41,22 @@ Add a screenshot of your architecture diagram showing:
 
 Add your full name inside the diagram or as a clear caption below it.
 
-Add your screenshot here.
+#### Screenshot 2 — Architecture Diagram
+
+Add a screenshot of your architecture diagram showing:
+
+- Public user
+- Reverse proxy
+- Frontend
+- Backend
+- Database
+- Docker networks
+- Public and private ports
+- Persistent database storage
+
+Add your full name inside the diagram or as a clear caption below it.
+
+![alt text](image-88.png)
 
 ---
 
@@ -55,7 +70,7 @@ docs/02-env-and-ports.md
 
 It must document environment-variable names, internal ports, persistent-data details, and the health-check method. Do not expose real credentials or values.
 
-Add your screenshot here.
+![alt text](image-89.png)
 
 ---
 
@@ -77,7 +92,7 @@ Add a screenshot showing `backend/Dockerfile`, including:
 - Internal backend port
 - Non-root user configuration
 
-Add your screenshot here.
+![alt text](image-90.png)
 
 ---
 
@@ -88,7 +103,7 @@ Add a screenshot showing `frontend/Dockerfile`, including:
 - Nginx runtime image
 - Static frontend files copied to the Nginx web root
 
-Add your screenshot here.
+![alt text](image-91.png)
 
 ---
 
@@ -101,7 +116,7 @@ backend/.dockerignore
 frontend/.dockerignore
 ```
 
-Add your screenshot here.
+![alt text](image-92.png)
 
 ---
 
@@ -115,7 +130,7 @@ Add a terminal screenshot showing successful builds of:
 
 The screenshot must also show the baseline and optimized backend image-size comparison.
 
-Add your screenshot here.
+![alt text](image-93.png)
 
 ---
 
@@ -123,7 +138,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the optimized backend container running as a non-root user.
 
-Add your screenshot here.
+![alt text](image-94.png)
 
 ---
 
@@ -136,7 +151,13 @@ Write a short note covering:
 - One Docker layer-caching optimization used
 - The security benefit of running the backend as a non-root user
 
-Write your note here.
+Image Sizes: The baseline backend image size was 453.21 MB, while the optimized multi-stage backend image size is 452.71 MB.
+
+Size Reduction: This optimization achieved a size reduction of 0.11%. (Note: The reduction is small here because the base alpine image is already minimal and there were likely very few development dependencies to omit, but the multi-stage structure ensures no unnecessary build tools are shipped to production).
+
+Layer-Caching Optimization: In the Dockerfile, we copied package*.json and ran npm install before copying the rest of the application source code (COPY . .). This caches the downloaded dependencies in a separate layer, ensuring that future builds only reinstall dependencies if the package.json file changes, which significantly speeds up the build process.
+
+Security Benefit: Configuring the container to run as the non-root node user follows the principle of least privilege. If the application is compromised, the attacker will only have restricted permissions. They cannot install system packages, modify system-level files, or easily escalate privileges, thereby severely limiting the potential blast radius of an attack.
 
 ---
 
@@ -159,7 +180,7 @@ backend
 database
 ```
 
-Add your screenshot here.
+![alt text](image-95.png)
 
 ---
 
@@ -171,7 +192,7 @@ Add a screenshot showing:
 - `back-tier` network
 - `db_data` named volume
 
-Add your screenshot here.
+![alt text](image-96.png)
 
 ---
 
@@ -179,7 +200,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing successful Docker Compose validation without exposing environment-variable values or secrets.
 
-Add your screenshot here.
+![alt text](image-97.png)
 
 ---
 
@@ -195,7 +216,7 @@ Configure health checks and ensure services start only after their dependencies 
 
 Add a screenshot showing the backend application configuration for the `/health` endpoint.
 
-Add your screenshot here.
+![alt text](image-98.png)
 
 ---
 
@@ -203,7 +224,7 @@ Add your screenshot here.
 
 Add a screenshot showing `docker-compose.yml` with health checks for MySQL and the backend.
 
-Add your screenshot here.
+![alt text](image-99.png)
 
 ---
 
@@ -215,7 +236,7 @@ Add a screenshot showing:
 - Reverse-proxy health check
 - `depends_on` conditions using `service_healthy`
 
-Add your screenshot here.
+![alt text](image-100.png)
 
 ---
 
@@ -223,7 +244,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing Docker Compose service status. The database, backend, frontend, and reverse proxy must be running successfully.
 
-Add your screenshot here.
+![alt text](image-104.png)
 
 ---
 
@@ -231,7 +252,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing a successful response from the public application health endpoint through the reverse proxy.
 
-Add your screenshot here.
+![alt text](image-103.png)
 
 ---
 
@@ -245,7 +266,7 @@ docs/03-healthchecks-and-depends-on.md
 
 Explain the health-check method for each service and the startup dependency order.
 
-Add your screenshot here.
+![alt text](image-105.png)
 
 ---
 
@@ -268,7 +289,7 @@ It must show routes for:
 - API requests
 - Health endpoint
 
-Add your screenshot here.
+![alt text](image-106.png)
 
 ---
 
@@ -276,7 +297,7 @@ Add your screenshot here.
 
 Add a screenshot of `docker-compose.yml` showing that only the `reverse-proxy` service publishes port 80.
 
-Add your screenshot here.
+![alt text](image-107.png)
 
 ---
 
@@ -289,7 +310,7 @@ Add a terminal screenshot showing successful requests through the selected rever
 - One static asset
 - Health endpoint
 
-Add your screenshot here.
+![alt text](image-108.png)
 
 ---
 
@@ -299,7 +320,7 @@ Add a browser screenshot showing the EpicBook application loaded through the VM 
 
 Add your full name as a clear caption below the screenshot.
 
-Add your screenshot here.
+![alt text](image-109.png)
 
 ---
 
@@ -313,7 +334,7 @@ docs/04-proxy-routing-and-cors.md
 
 Explain the proxy routes and state whether CORS was required and why.
 
-Add your screenshot here.
+![alt text](image-110.png)
 
 ---
 
@@ -329,7 +350,7 @@ Verify MySQL persistence and perform a controlled backup and restore drill.
 
 Add a terminal screenshot showing the `db_data` named volume and its MySQL mount configuration.
 
-Add your screenshot here.
+![alt text](image-111.png)
 
 ---
 
@@ -337,7 +358,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the selected test data before the backup and restore drill.
 
-Add your screenshot here.
+![alt text](image-112.png)
 
 ---
 
@@ -345,7 +366,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing successful backup creation and the backup file stored in the host backup directory.
 
-Add your screenshot here.
+![alt text](image-113.png)
 
 ---
 
@@ -353,7 +374,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing that the selected test record was removed during the controlled data-loss test.
 
-Add your screenshot here.
+![alt text](image-114.png)
 
 ---
 
@@ -361,7 +382,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing successful restore and verification that the deleted test record is available again.
 
-Add your screenshot here.
+![alt text](image-115.png)
 
 ---
 
@@ -371,7 +392,7 @@ Add a terminal screenshot showing that database data remains available after a n
 
 Do not use `docker compose down -v`.
 
-Add your screenshot here.
+![alt text](image-116.png)
 
 ---
 
@@ -385,7 +406,7 @@ docs/05-persistence-and-backup.md
 
 Include the backup plan and restore procedure.
 
-Add your screenshot here.
+![alt text](image-117.png)
 
 ---
 
@@ -405,7 +426,7 @@ Add a screenshot showing:
 - Proxy log format
 - Docker Compose host log-directory bind mount
 
-Add your screenshot here.
+![alt text](image-118.png)
 
 ---
 
@@ -416,7 +437,7 @@ Add a terminal screenshot showing:
 - Selected reverse-proxy logs available from the host directory after a proxy restart
 - Backend logs displayed through Docker Compose
 
-Add your screenshot here.
+![alt text](image-119.png)
 
 ---
 
@@ -430,7 +451,13 @@ Write a short note covering:
 - Whether JSON or standard text logs were used
 - Why passwords, tokens, headers, and database connection strings must not appear in logs
 
-Write your note here.
+The EpicBook deployment utilizes Nginx as the reverse proxy. Nginx access and error logs are persisted to the host machine via a Docker bind mount mapped to the ./logs/nginx directory, ensuring log data safely survives container recreation and restarts.
+
+Backend logs are managed by Docker's default logging driver and are viewed directly through the Docker Compose CLI using commands like docker compose logs backend.
+
+Standard text logs were used for the proxy (via Nginx's built-in combined format) rather than JSON, providing immediate readability and compatibility with standard command-line tools without requiring complex parsing.
+
+It is critical that passwords, API tokens, authorization headers, and database connection strings never appear in these logs. Writing sensitive credentials to plain text files creates severe security vulnerabilities, exposing the system to credential theft and unauthorized access if the log directory or centralized logging platforms are compromised.
 
 ---
 
@@ -450,7 +477,7 @@ Add a cloud-console screenshot showing:
 - SSH port 22 restricted to your IP address
 - HTTP port 80 allowed from Anywhere
 
-Add your screenshot here.
+![alt text](image-121.png)
 
 ---
 
@@ -462,7 +489,7 @@ Add a VM terminal screenshot showing:
 - Successful public health or API response
 - No published database, frontend, or backend ports
 
-Add your screenshot here.
+![alt text](image-122.png)
 
 ---
 
@@ -472,7 +499,7 @@ Add a browser screenshot showing the EpicBook application loaded through the VM 
 
 Add your full name as a clear caption below the screenshot.
 
-Add your screenshot here.
+![alt text](image-120.png)
 
 ---
 
@@ -486,7 +513,17 @@ Write a short note covering:
 - Security rules configured
 - Confirmation that the application and backend API worked through the reverse proxy
 
-Write your note here.
+The EpicBook cloud deployment was completed on an Azure Virtual Machine running Ubuntu Linux.
+
+To secure the environment while maintaining accessibility, the virtual machine's Network Security Group (NSG) was configured with strict security rules:
+
+HTTP (TCP Port 80): Publicly exposed to allow external web access to the application via the reverse proxy.
+
+SSH (TCP Port 22): Restricted exclusively to trusted IP addresses for secure management access.
+
+Internal Application Ports: All database, frontend, and backend container ports remain strictly unexposed to the internet and accessible only within the internal Docker network.
+
+Verification confirmed that both the frontend interface and backend API routes served requests successfully through the Nginx reverse proxy using the VM's public IP address.
 
 ---
 
@@ -502,7 +539,6 @@ Optionally automate image build, image push, and deployment through GitHub Actio
 
 Add a screenshot showing a successful pipeline run with build, image push, deployment, and verification stages.
 
-Add your screenshot here.
 
 ---
 
@@ -516,7 +552,6 @@ Write a short note covering:
 - Deployment trigger
 - Manual approval or secret-handling approach
 
-Write your note here.
 
 ---
 
@@ -537,7 +572,7 @@ Add a terminal screenshot showing:
 - Backend restart
 - Successful health-check recovery
 
-Add your screenshot here.
+![alt text](image-123.png)
 
 ---
 
@@ -550,7 +585,7 @@ Add a terminal screenshot showing:
 - Database restart
 - Successful application recovery
 
-Add your screenshot here.
+![alt text](image-124.png)
 
 ---
 
@@ -565,13 +600,53 @@ Write a short operations runbook covering:
 - What to check when the application returns an error
 - Results of backend and database reliability tests
 
-Write your note here.
+1. Safe Restart Procedures
+Single Service: To restart a specific component without affecting the rest of the stack, run docker compose restart <service_name> (valid options: reverse-proxy, frontend, backend, database).
+
+Full Stack: To safely restart the entire application, run docker compose down followed by docker compose up -d. Avoid using the -v flag to ensure persistent database volumes are not destroyed.
+
+Verification: Always run docker compose ps post-restart to confirm the targeted services reach a healthy status.
+
+2. Backup and Restore Procedures
+Backup: Create a SQL dump from the database container and save it to the host directory:
+docker compose exec -T database sh -c 'exec mysqldump -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" "$MYSQL_DATABASE"' > backups\epicbook-backup.sql
+
+Restore: Pipe the saved SQL backup back into the MySQL container (ensure this is done carefully to avoid unintended data overwrites):
+Get-Content -Raw backups\epicbook-backup.sql | docker compose exec -T database sh -c 'mysql -u"$MYSQL_USER" -p"$MYSQL_PASSWORD" "$MYSQL_DATABASE"'
+
+3. Secret-Rotation Approach
+Generate new secure values for database passwords or API tokens.
+
+Update the .env file directly on the host machine.
+
+Apply the updated secrets by forcing container recreation: docker compose up -d --force-recreate.
+
+Ensure the .env file remains in .gitignore and is never committed to version control.
+
+4. Database Recovery Procedure
+Minor Outage (Crash): Run docker compose start database or docker compose restart database and wait for the Compose health check to pass.
+
+Major Outage (Data Corruption): Stop the backend service (docker compose stop backend) to halt incoming writes. Execute the Restore procedure outlined in section 2 using the most recent valid SQL backup, then restart the backend.
+
+5. Troubleshooting Application Errors
+Check Health Status: Run docker compose ps to identify any stopped or unhealthy containers.
+
+Inspect Logs: Run docker compose logs --tail=100 <service_name>. Check the reverse-proxy for upstream routing errors (e.g., 502 Bad Gateway) and the backend for stack traces or database connection timeouts.
+
+Verify Environment Variables: Ensure .env values are correctly formatted and match across dependent services (e.g., backend database credentials matching database container credentials).
+
+Network Security: If deployed to the cloud, verify that the Azure Network Security Group (NSG) rules allow inbound traffic on TCP port 80.
+
+6. Reliability Test Results
+Backend Resiliency: Testing confirmed that stopping the backend container safely triggers a 502 Bad Gateway response from the Nginx proxy without crashing the frontend. Upon backend restart, Docker health checks successfully verified recovery, and API traffic resumed seamlessly.
+
+Database Resiliency: Simulating a database outage correctly halted dependent backend API requests. Once the database container was restarted, the backend automatically re-established its connection, proving the stack's ability to self-heal without manual application restarts.
 
 ---
 
 # Final Public Application URL
 
-**EpicBook URL:** `http://<VM_PUBLIC_IP>`
+**EpicBook URL:**  http://102.37.8.104/
 
 Replace the placeholder with your working public URL.
 
@@ -579,7 +654,7 @@ Replace the placeholder with your working public URL.
 
 # GitHub Repository URL
 
-**Your Fork or Repository URL:** `Add your GitHub repository URL here`
+**Your Fork or Repository URL:** https://github.com/adeitup11/theepicbook
 
 ---
 
@@ -598,11 +673,11 @@ Your post must include:
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-docker-softwareengineering-share-7517594851866161153-4IQA/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post showing the text body and deployment verification image.
+![alt text](image-125.png)
 
 ---
 
