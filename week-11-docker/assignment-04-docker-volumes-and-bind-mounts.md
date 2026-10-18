@@ -26,7 +26,7 @@ Add a screenshot of the terminal showing successful completion of:
 docker pull nginx:alpine
 ```
 
-Add your screenshot here.
+![alt text](image-126.png)
 
 ---
 
@@ -37,8 +37,7 @@ Add a screenshot of the terminal showing the created host directory:
 ```text
 $HOME/nginx-logs
 ```
-
-Add your screenshot here.
+![alt text](image-127.png)
 
 ---
 
@@ -56,7 +55,7 @@ The output must show the `myweb` container with:
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+![alt text](image-128.png)
 
 ---
 
@@ -65,12 +64,12 @@ Add your screenshot here.
 Add a browser screenshot showing the Nginx Welcome Page at:
 
 ```text
-http://<YOUR-VM-PUBLIC-IP>
+http://102.37.8.104/
 ```
 
 Ensure that the VM public IP is visible in the address bar. Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](image-129.png)
 
 ---
 
@@ -79,12 +78,17 @@ Add your screenshot here.
 Add a screenshot of the terminal showing the host log files and access-log content from:
 
 ```text
-$HOME/nginx-logs
+Full Name: Adekunle Adepoju
+total 8
+-rw-r--r-- 1 root root 420 Oct 18 15:14 access.log
+-rw-r--r-- 1 root root 745 Oct 18 15:14 error.log
+105.113.75.113 - - [18/Oct/2026:15:14:37 +0000] "GET / HTTP/1.1" 200 896 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36" "-"
+105.113.75.113 - - [18/Oct/2026:15:14:38 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://102.37.8.104/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36" "-"
 ```
 
 The output must show `access.log`, `error.log`, and an access-log entry created when you opened the Nginx page.
 
-Add your screenshot here.
+![alt text](image-130.png)
 
 ---
 
@@ -97,7 +101,7 @@ docker stop myweb
 docker rm myweb
 ```
 
-Add your screenshot here.
+![alt text](image-131.png)
 
 ---
 
@@ -106,12 +110,17 @@ Add your screenshot here.
 Add a screenshot of the terminal showing that `access.log` and `error.log` still exist in:
 
 ```text
-$HOME/nginx-logs
+Full Name: Adekunle Adepoju
+total 8
+-rw-r--r-- 1 root root  420 Oct 18 15:14 access.log
+-rw-r--r-- 1 root root 1498 Oct 18 15:17 error.log
+105.113.75.113 - - [18/Oct/2026:15:14:37 +0000] "GET / HTTP/1.1" 200 896 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36" "-"
+105.113.75.113 - - [18/Oct/2026:15:14:38 +0000] "GET /favicon.ico HTTP/1.1" 404 555 "http://102.37.8.104/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36" "-"
 ```
 
 The access log must retain its content after the container has been removed.
 
-Add your screenshot here.
+![alt text](image-132.png)
 
 ---
 
@@ -127,7 +136,7 @@ Deploy backend and frontend containers that share data through a named Docker Vo
 
 Add a screenshot of the terminal showing the `two-tier-app` project structure, including separate `backend` and `frontend` directories with a `Dockerfile` and `index.js` file in each.
 
-Add your screenshot here.
+![alt text](image-133.png)
 
 ---
 
@@ -139,7 +148,7 @@ Add a screenshot of the terminal showing `mynetwork` in:
 docker network ls
 ```
 
-Add your screenshot here.
+![alt text](image-135.png)
 
 ---
 
@@ -151,7 +160,7 @@ Add a screenshot of the terminal showing `shared-data` in:
 docker volume ls
 ```
 
-Add your screenshot here.
+![alt text](image-134.png)
 
 ---
 
@@ -159,7 +168,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the completed backend `Dockerfile`.
 
-Add your screenshot here.
+![alt text](image-136.png)
 
 ---
 
@@ -167,7 +176,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful completion of the `backend-app:latest` image build.
 
-Add your screenshot here.
+![alt text](image-137.png)
 
 ---
 
@@ -181,7 +190,7 @@ docker ps
 
 The output must show the running `backend` container.
 
-Add your screenshot here.
+![alt text](image-138.png)
 
 ---
 
@@ -189,7 +198,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the completed frontend `Dockerfile`.
 
-Add your screenshot here.
+![alt text](image-139.png)
 
 ---
 
@@ -197,7 +206,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful completion of the `frontend-app:latest` image build.
 
-Add your screenshot here.
+![alt text](image-140.png)
 
 ---
 
@@ -215,7 +224,7 @@ The output must show both `backend` and `frontend` containers running. Only `fro
 0.0.0.0:80->80/tcp
 ```
 
-Add your screenshot here.
+![alt text](image-141.png)
 
 ---
 
@@ -229,7 +238,7 @@ The output must include:
 Data written: Hello from Backend!
 ```
 
-Add your screenshot here.
+![alt text](image-142.png)
 
 ---
 
@@ -243,7 +252,7 @@ Hello from Backend!
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](image-143.png)
 
 ---
 
@@ -257,7 +266,7 @@ Test Data 1
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](image-144.png)
 
 ---
 
@@ -271,7 +280,7 @@ Test Data 2 - New Update
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](image-145.png)
 
 ---
 
@@ -295,7 +304,7 @@ This proves that the `shared-data` Docker Volume outlived both application conta
 
 Add your full name as a clear caption directly below the screenshot.
 
-Add your screenshot here.
+![alt text](image-146.png)
 
 ---
 
@@ -308,13 +317,23 @@ Write a short explanation covering:
 - How Task 2 proved Docker Volume persistence
 - Why Docker Volumes are commonly used for application data
 
-Write your explanation here.
+### 1. Difference Between a Bind Mount and a Docker Volume
+A Bind Mount connects a specific host directory to a directory inside a container, while a Docker Volume is managed by Docker and stores data independently of containers.
+
+### 2. How Task 1 Proved Bind Mount Persistence
+I mounted the host directory `$HOME/nginx-logs` to `/var/log/nginx` in the Nginx container. After accessing the Nginx welcome page, I verified that the logs were saved on the host. Even after removing the container, the log files and their contents remained available.
+
+### 3. How Task 2 Proved Docker Volume Persistence
+I created a Docker Volume named `shared-data` and mounted it in both the backend and frontend containers. The backend wrote messages to the volume, and the frontend displayed them. After removing and recreating both containers, the latest message, `Test Data 2 - New Update`, was still available, proving data persistence.
+
+### 4. Why Docker Volumes Are Commonly Used for Application Data
+Docker Volumes are commonly used because they preserve important data independently of container lifecycles. They are suitable for application files, uploads, reports, and databases, making data management more reliable when containers are updated, replaced, or recreated.
 
 ---
 
 # Public Application URL
 
-**Application URL:** `Add your VM public IP URL here`
+**Application URL:** http://102.37.8.104/
 
 ---
 
@@ -328,15 +347,13 @@ Create a LinkedIn post about Docker Volumes and Bind Mounts, including one diffe
 
 #### LinkedIn Post URL
 
-Paste your LinkedIn post URL here:
-
-`Add your URL here`
+https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-docker-softwareengineering-share-7517594851866161153-4IQA/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 ---
 
 #### LinkedIn Post Screenshot
 
-Add a screenshot of the published LinkedIn post here. Include a screenshot of the application displaying shared data.
+![alt text](image-125.png)
 
 ---
 
