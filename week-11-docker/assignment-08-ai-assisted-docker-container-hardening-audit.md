@@ -33,7 +33,7 @@ docker-audit.sh
 SKILL.md
 ```
 
-Add your screenshot here.
+![alt text](image-155.png)
 
 ---
 
@@ -49,7 +49,7 @@ Add the supplied `docker-audit` skill to Claude Code and confirm that it is avai
 
 Add a screenshot of Claude Code showing `docker-audit` in the available skill list.
 
-Add your screenshot here.
+![alt text](image-156.png)
 
 ---
 
@@ -70,7 +70,7 @@ Add a terminal screenshot showing:
 - Your full name
 - The usage message displayed when the script runs without a container name
 
-Add your screenshot here.
+![alt text](image-157.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add a terminal screenshot showing:
 - `docker ps`
 - The audit command using the selected target container name
 
-Add your screenshot here.
+![alt text](image-158.png)
 
 ---
 
@@ -98,7 +98,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing the initial Docker audit results.
 
-Add your screenshot here.
+![alt text](image-159.png)
 
 ---
 
@@ -119,7 +119,7 @@ Add a Claude Code screenshot showing:
 - Recommended manual fix
 - Verification method
 
-Add your screenshot here.
+![alt text](image-160.png)
 
 ---
 
@@ -135,7 +135,7 @@ Manually fix one WARN or FAIL finding from the initial audit.
 
 Add a screenshot of the updated Dockerfile or `docker-compose.yml` showing the selected hardening fix.
 
-Add your screenshot here.
+![alt text](image-161.png)
 
 ---
 
@@ -143,8 +143,7 @@ Add your screenshot here.
 
 Add a terminal screenshot showing your full name and the rebuilt or recreated service/container running successfully.
 
-Add your screenshot here.
-
+![alt text](image-164.png)
 ---
 
 # Task 7 — Re-Run the Audit and Compare Results
@@ -163,7 +162,7 @@ Add a terminal screenshot showing:
 - The updated running container
 - The final audit report
 
-Add your screenshot here.
+![alt text](image-163.png)
 
 ---
 
@@ -176,7 +175,15 @@ Write a short comparison covering:
 - Final audit result
 - Security benefit of the improvement
 
-Write your comparison here.
+### Docker Container Hardening Audit: Before-and-After Comparison
+
+**Initial Audit Finding:** The initial audit reported a WARN for the image tag because the backend used the unversioned image name `theepicbook-backend`, without an explicit version tag.
+
+**Docker Compose Change Applied:** Added `image: theepicbook-backend:1.0.0` to the backend service in `docker-compose.yml`, then rebuilt and recreated the backend using `docker compose up -d --build backend`.
+
+**Final Audit Result:** The image-tag check should change from WARN to PASS after verifying that the recreated container uses `theepicbook-backend:1.0.0` and rerunning the audit. The final result must be confirmed by the actual audit report.
+
+**Security Benefit:** Using a specific image tag improves deployment consistency, traceability, and version management. It makes it easier to identify the application version being deployed and reduces ambiguity associated with unversioned or `latest` image references.
 
 ---
 
@@ -188,13 +195,13 @@ Create a LinkedIn post about the container security checks you performed, one ha
 
 ### Evidence
 
-**LinkedIn Post URL:** `Add your LinkedIn post URL here`
+**LinkedIn Post URL:** https://www.linkedin.com/posts/adepoju-adekunle-43217aa4_devops-docker-softwareengineering-share-7517594851866161153-4IQA/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABYYCOYB1CQ-AKDgCJ7ecCiAgMVI9f2fFws
 
 #### LinkedIn Post Screenshot
 
 Add a screenshot of the published LinkedIn post, including the final audit result.
 
-Add your screenshot here.
+![alt text](image-125.png)
 
 ---
 
